@@ -11,6 +11,8 @@ var forms_1 = require("@angular/forms");
 var material_1 = require("@angular/material");
 var app_component_1 = require("./app.component");
 require("hammerjs");
+//routing
+var app_routing_1 = require("./app.routing");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -18,12 +20,19 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule,
+        imports: [
+            platform_browser_1.BrowserModule,
             forms_1.FormsModule,
             forms_1.ReactiveFormsModule,
-            material_1.MaterialModule,],
-        declarations: [app_component_1.AppComponent],
-        bootstrap: [app_component_1.AppComponent]
+            material_1.MaterialModule,
+            app_routing_1.AppRouting,
+        ],
+        declarations: [
+            app_component_1.AppComponent
+        ],
+        bootstrap: [
+            app_component_1.AppComponent
+        ]
     })
 ], AppModule);
 exports.AppModule = AppModule;
