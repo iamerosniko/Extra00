@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
-import { PdfModule } from './pdf-proto/pdf.module';
 
 import { PdfViewerComponent } from 'ng2-pdf-viewer';
 import 'hammerjs';

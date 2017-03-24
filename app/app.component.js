@@ -23,7 +23,7 @@ AppComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'my-app',
-        templateUrl: "pdf-proto.component.html"
+        templateUrl: "arti-proto.html"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

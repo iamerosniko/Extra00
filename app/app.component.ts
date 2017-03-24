@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'my-app', 
-    templateUrl: `pdf-proto.component.html`
+    templateUrl: `arti-proto.html`
+    //templateUrl: `Manulife-web/story_html5.html`
+    //templateUrl: `pdf-proto.component.html`
 })
 
 export class AppComponent {
