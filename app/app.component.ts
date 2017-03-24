@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'my-app', 
-    templateUrl: `app.component.html`
+    templateUrl: `pdf-proto.component.html`
 })
 
 export class AppComponent {
@@ -16,4 +16,6 @@ export class AppComponent {
         {value: 'pizza-1', viewValue: 'Pizza'},
         {value: 'tacos-2', viewValue: 'Tacos'}
     ];
+    pdfSrc: string = '/app/pdf-test.pdf';
+    page: number = 1;
 }    

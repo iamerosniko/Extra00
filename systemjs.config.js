@@ -24,6 +24,8 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       '@angular/material':'npm:@angular/material/bundles/material.umd.js',
       'hammerjs':'npm:hammerjs/hammer.js',
+      'ng2-pdf-viewer': 'npm:ng2-pdf-viewer',
+      'pdfjs-dist': 'npm:pdfjs-dist',
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
@@ -36,7 +38,14 @@
       },
       rxjs: {
         defaultExtension: 'js'
+      },
+      'pdfjs-dist':{
+        defaultExtension: 'js' 
+      },
+      'ng2-pdf-viewer':{
+        main: 'dist/index.js', defaultExtension: 'js'
       }
+      
     }
   });
 })(this);

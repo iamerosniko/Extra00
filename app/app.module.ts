@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
+import { PdfModule } from './pdf-proto/pdf.module';
+
+import { PdfViewerComponent } from 'ng2-pdf-viewer';
 import 'hammerjs';
 //routing
 import { AppRouting } from './app.routing';
@@ -14,11 +17,13 @@ import { AppRouting } from './app.routing';
         FormsModule,
         ReactiveFormsModule,
         MaterialModule,
+        //PdfModule,
         AppRouting,
     ],
     declarations: 
     [
-        AppComponent
+        AppComponent,
+        PdfViewerComponent
     ],
     bootstrap: 
     [

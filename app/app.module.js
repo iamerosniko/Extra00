@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var material_1 = require("@angular/material");
 var app_component_1 = require("./app.component");
+var ng2_pdf_viewer_1 = require("ng2-pdf-viewer");
 require("hammerjs");
 //routing
 var app_routing_1 = require("./app.routing");
@@ -25,10 +26,12 @@ AppModule = __decorate([
             forms_1.FormsModule,
             forms_1.ReactiveFormsModule,
             material_1.MaterialModule,
+            //PdfModule,
             app_routing_1.AppRouting,
         ],
         declarations: [
-            app_component_1.AppComponent
+            app_component_1.AppComponent,
+            ng2_pdf_viewer_1.PdfViewerComponent
         ],
         bootstrap: [
             app_component_1.AppComponent

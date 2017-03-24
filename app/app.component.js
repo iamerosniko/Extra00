@@ -14,6 +14,8 @@ var AppComponent = (function () {
             { value: 'pizza-1', viewValue: 'Pizza' },
             { value: 'tacos-2', viewValue: 'Tacos' }
         ];
+        this.pdfSrc = '/app/pdf-test.pdf';
+        this.page = 1;
     }
     return AppComponent;
 }());
@@ -21,7 +23,7 @@ AppComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'my-app',
-        templateUrl: "app.component.html"
+        templateUrl: "pdf-proto.component.html"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
