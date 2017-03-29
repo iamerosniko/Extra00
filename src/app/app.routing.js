@@ -6,20 +6,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-//routing
-var app_routing_1 = require("./app.routing");
-var AppModule = (function () {
-    function AppModule() {
+var router_1 = require("@angular/router");
+//import { AboutComponent } from './about.component';
+var appRoutes = [
+    //{ path: 'about', component: AboutComponent},
+    { path: '', redirectTo: 'project-tracker', pathMatch: 'full' }
+];
+var AppRouting = (function () {
+    function AppRouting() {
     }
-    return AppModule;
+    return AppRouting;
 }());
-AppModule = __decorate([
+AppRouting = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, app_routing_1.AppRouting],
-        declarations: [app_component_1.AppComponent],
-        bootstrap: [app_component_1.AppComponent]
+        imports: [router_1.RouterModule.forRoot(appRoutes, { useHash: true })],
+        exports: [router_1.RouterModule]
     })
-], AppModule);
-exports.AppModule = AppModule;
+], AppRouting);
+exports.AppRouting = AppRouting;
