@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="sample.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/npm.js"></script>
+        
+    </head>
+    <body>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <ul class="nav">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Link 2 (toggle)</a>
+                    <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
+                        <li><a href="#">Link 2.1</a></li>
+                        <li><a href="#">Link 2.2</a></li>
+                        <li><a href="#">Link 2.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </div>
+
+        <span id="myNavBar" onclick="openNav()">&#9776;Menu</span>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("myNavBar").style.opacity = 0;
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("myNavBar").style.opacity = 1;
+            }
+
+            
+        </script>
+
+        <script src="js/bootstrap.js"></script>
+        <script src="js/npm.js"></script>
+        
+    </body>
+</html> 
