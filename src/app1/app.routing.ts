@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { SyncMainComponent } from './components/synchronization/sync-main.component';
+//import { AboutComponent } from './about.component';
 
 const appRoutes: Routes = [
-    { path: 'sync', component: SyncMainComponent},
+    //{ path: 'about', component: AboutComponent},
     { path: '', redirectTo: 'project-tracker', pathMatch: 'full' }
 ];
 

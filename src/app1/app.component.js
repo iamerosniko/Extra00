@@ -6,21 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var sync_main_component_1 = require("./components/synchronization/sync-main.component");
-var appRoutes = [
-    { path: 'sync', component: sync_main_component_1.SyncMainComponent },
-    { path: '', redirectTo: 'project-tracker', pathMatch: 'full' }
-];
-var AppRouting = (function () {
-    function AppRouting() {
+var AppComponent = (function () {
+    function AppComponent() {
+        this.name = 'Angular';
     }
-    return AppRouting;
+    return AppComponent;
 }());
-AppRouting = __decorate([
-    core_1.NgModule({
-        imports: [router_1.RouterModule.forRoot(appRoutes, { useHash: true })],
-        exports: [router_1.RouterModule]
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        template: "<h1>Hello {{name}}</h1>",
     })
-], AppRouting);
-exports.AppRouting = AppRouting;
+], AppComponent);
+exports.AppComponent = AppComponent;
