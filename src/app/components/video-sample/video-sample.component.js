@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var VideoSampleComponent = (function () {
     function VideoSampleComponent() {
-        this.path = 'resources/Wildlife.mp4';
+        this.path = 'resources/videoplayback.mp4';
     }
     return VideoSampleComponent;
 }());

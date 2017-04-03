@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
     templateUrl:`video-sample.component.html`
 })
 export class VideoSampleComponent  { 
-    path:string = 'resources/Wildlife.mp4';
+    path:string = 'resources/videoplayback.mp4';
 }
