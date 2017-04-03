@@ -6,16 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+var PhotoSampleComponent = (function () {
+    function PhotoSampleComponent() {
+        this.path = 'resources/pic.png';
     }
-    return AppComponent;
+    return PhotoSampleComponent;
 }());
-AppComponent = __decorate([
+PhotoSampleComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "<h1>Hello {{name}}</h1>\n      <ul class=\"nav nav-tabs\">\n            <li role=\"presentation\"><a routerLink=\"/viewphoto\">photo-sample</a></li>\n            <li role=\"presentation\"><a routerLink=\"/follow-up-items\">Follow up Items</a></li>\n            <li role=\"presentation\"><a routerLink=\"/reports\">Project Review</a></li>\n            \n        </ul>\n  <router-outlet></router-outlet>",
+        moduleId: module.id,
+        templateUrl: "photo-sample.component.html"
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
+], PhotoSampleComponent);
+exports.PhotoSampleComponent = PhotoSampleComponent;

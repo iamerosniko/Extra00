@@ -4,4 +4,5 @@ import { Component } from '@angular/core';
     templateUrl:`photo-sample.component.html`
 })
 export class PhotoSampleComponent  { 
+    path:string = 'resources/pic.png';
 }
