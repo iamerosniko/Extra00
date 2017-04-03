@@ -1,0 +1,83 @@
+.Maincontent{
+    height: 100vh;
+}
+
+#MainHeader{
+    padding: 0px; 
+    margin: 0px; 
+    height: 7%; 
+    background: #418173; 
+    padding: 0px; 
+    margin: 0px;
+}
+
+#MainBody{
+    padding: 0px; 
+    margin: 0px;
+    height: 93%
+}
+
+#BodySideNav{
+    
+    background:#196856; 
+    margin: 0px; 
+    display: block; 
+    height: 93vh; 
+    padding: 0px;
+    overflow-y: auto;
+}
+
+#BodyContent{
+    background: #f1f1f1;
+     margin: 0px; 
+     display: block; 
+     height: 93vh;
+      padding: 0px;
+}
+/*================================================================================*/
+.nav > li{
+    text-decoration: none;
+    list-style-type: none;   
+    width: 100%;
+
+}
+
+.nav > li > ul > li > a {
+   text-decoration: none;
+   list-style-type: none;
+   font-size: 15px;
+}
+
+
+
+.nav > li > ul{
+    background: #185c4c; 
+}
+
+.nav > li > a{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    Color: #ffffff;
+    font-weight: bold;  
+    font-size: 20px;
+}
+
+
+/*================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
