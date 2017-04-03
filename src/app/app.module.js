@@ -11,6 +11,7 @@ var app_component_1 = require("./app.component");
 //ComponentModules
 //import { SynchronizationModule } from './components/synchronization/sync.module';
 var photo_sample_module_1 = require("./components/photo-sample/photo-sample.module");
+var video_sample_module_1 = require("./components/video-sample/video-sample.module");
 //routing
 var app_routing_1 = require("./app.routing");
 var AppModule = (function () {
@@ -23,6 +24,7 @@ AppModule = __decorate([
         imports: [platform_browser_1.BrowserModule,
             //SynchronizationModule, 
             photo_sample_module_1.PhotoSampleModule,
+            video_sample_module_1.VideoSampleModule,
             app_routing_1.AppRouting
         ],
         declarations: [app_component_1.AppComponent],
