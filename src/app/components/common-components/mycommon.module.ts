@@ -16,4 +16,4 @@ import { PhotoViewerComponent } from './photo-viewer.component';
     ]
 })
 
-export class ViewerModule {}
+export class MyCommonModule {}
