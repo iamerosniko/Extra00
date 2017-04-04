@@ -9,6 +9,8 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var mv_component_1 = require("./mv.component");
+var org_component_1 = require("./org.component");
+var strategies_component_1 = require("./strategies.component");
 var disoverview_routing_1 = require("./disoverview.routing");
 var photo_viewer_module_1 = require("../photo-viewer/photo-viewer.module");
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
@@ -26,7 +28,9 @@ DISOverviewModule = __decorate([
             disoverview_routing_1.DISOverviewRouting
         ],
         declarations: [
-            mv_component_1.MVComponent
+            mv_component_1.MVComponent,
+            org_component_1.OrgComponent,
+            strategies_component_1.StrategiesComponent
         ],
         providers: []
     })
