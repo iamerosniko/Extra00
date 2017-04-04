@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 //import { MyCommonModule } from '../common-components/mycommon.module';
 import { PhotoViewerComponent } from './photo-viewer.component';
 import { VideoViewerComponent } from './video-viewer.component';
-import { PdfViewerComponent } from './pdf-viewer.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -21,7 +20,6 @@ import { PdfViewerComponent } from './pdf-viewer.component';
     exports: [
         PhotoViewerComponent,
         VideoViewerComponent,
-        PdfViewerComponent
     ] 
 })
 
