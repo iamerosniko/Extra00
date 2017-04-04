@@ -1,20 +1,21 @@
 import 'rxjs/add/operator/toPromise';
 import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
-import { Question } from '../entities/question';
+import { Answer } from '../entities/answer';
 @Injectable()
 export class RandomQuestionService {
     private headers = new Headers({'Content-Type': 'application/json'});
-    private apiUrl = 'api/RandQuestions';  
+    private apiUrl = 'api/RandAnswers';  
     
     constructor(private http: Http){}
-
-    getQuestions(): Promise<Question[]> {
+    //pass the question id
+    getAnswers(id: string): Promise<Answer[]> {
+        const url = `${this.apiUrl}/${id}`;
         return this.http
-                .get(this.apiUrl, {headers: this.headers})
+                .get(url)
                 .toPromise()
-                .then(response => response.json())
-                .catch(this.handleError);
+                .then(response => response.json())  
+                .catch(this.handleError);      
     }
 
     private handleError(error: any): Promise<any> {
