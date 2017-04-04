@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { OptComponent } from './opt.component';
+import { KhronosComponent } from './khronos.component';
 
 import { DISToolsRouting } from './distools.routing';
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
@@ -14,6 +15,7 @@ import { DISToolsRouting } from './distools.routing';
     ],
     declarations: [
         OptComponent,
+        KhronosComponent,
     ],
     providers: [
     ]
