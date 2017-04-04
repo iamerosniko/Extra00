@@ -12,6 +12,7 @@ var app_component_1 = require("./app.component");
 //import { SynchronizationModule } from './components/synchronization/sync.module';
 var photo_sample_module_1 = require("./components/photo-sample/photo-sample.module");
 var video_sample_module_1 = require("./components/video-sample/video-sample.module");
+var disoverview_module_1 = require("./components/03-disoverview/disoverview.module");
 //routing
 var app_routing_1 = require("./app.routing");
 var AppModule = (function () {
@@ -23,6 +24,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule,
             //SynchronizationModule, 
+            disoverview_module_1.DISOverviewModule,
             photo_sample_module_1.PhotoSampleModule,
             video_sample_module_1.VideoSampleModule,
             app_routing_1.AppRouting
