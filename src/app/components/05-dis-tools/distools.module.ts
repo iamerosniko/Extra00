@@ -2,11 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { MVComponent } from './mv.component';
-import { OrgComponent } from './org.component';
-import { StrategiesComponent } from './strategies.component';
+import { OptComponent } from './opt.component';
 
-import { DISOverviewRouting } from './disoverview.routing';
+import { DISOverviewRouting } from './distools.routing';
 import { ViewerModule } from '../viewer/viewer.module';
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
 @NgModule({
@@ -17,12 +15,10 @@ import { ViewerModule } from '../viewer/viewer.module';
         DISOverviewRouting
     ],
     declarations: [
-        MVComponent,
-        OrgComponent,
-        StrategiesComponent
+        OptComponent,
     ],
     providers: [
     ]
 })
 
-export class DISOverviewModule {}
+export class DISToolsModule {}

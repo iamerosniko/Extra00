@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 //import { MyCommonModule } from '../common-components/mycommon.module';
 import { PhotoViewerComponent } from './photo-viewer.component';
 import { VideoViewerComponent } from './video-viewer.component';
+import { PdfViewerComponent } from './pdf-viewer.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -12,14 +13,16 @@ import { VideoViewerComponent } from './video-viewer.component';
     ],
     declarations: [
         PhotoViewerComponent,
-        VideoViewerComponent
+        VideoViewerComponent,
+        PdfViewerComponent
     ],
     providers: [
     ],
     exports: [
         PhotoViewerComponent,
-        VideoViewerComponent
+        VideoViewerComponent,
+        PdfViewerComponent
     ] 
 })
 
-export class PhotoViewerModule {}
+export class ViewerModule {}
