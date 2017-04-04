@@ -11,6 +11,7 @@ var app_component_1 = require("./app.component");
 //ComponentModules
 var disoverview_module_1 = require("./components/03-disoverview/disoverview.module");
 var distools_module_1 = require("./components/05-dis-tools/distools.module");
+var policy_module_1 = require("./components/06-policy/policy.module");
 //routing
 var app_routing_1 = require("./app.routing");
 var AppModule = (function () {
@@ -24,6 +25,7 @@ AppModule = __decorate([
             //SynchronizationModule, 
             disoverview_module_1.DISOverviewModule,
             distools_module_1.DISToolsModule,
+            policy_module_1.PolicyModule,
             app_routing_1.AppRouting
         ],
         declarations: [app_component_1.AppComponent],

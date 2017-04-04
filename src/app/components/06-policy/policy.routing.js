@@ -8,12 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 //component
-var opt_component_1 = require("./opt.component");
-var khronos_component_1 = require("./khronos.component");
+var vl_component_1 = require("./vl.component");
+var workrule_component_1 = require("./workrule.component");
 var distoolsRoutes = [
     //paths
-    { path: 'opt', component: opt_component_1.OptComponent },
-    { path: 'khronos', component: khronos_component_1.KhronosComponent },
+    { path: 'vacation-leave', component: vl_component_1.VLComponent },
+    { path: 'work-rule', component: workrule_component_1.WorkRuleComponent },
 ];
 var PolicyRouting = (function () {
     function PolicyRouting() {
