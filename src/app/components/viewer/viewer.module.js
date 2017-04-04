@@ -8,31 +8,32 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
-var mv_component_1 = require("./mv.component");
-var org_component_1 = require("./org.component");
-var strategies_component_1 = require("./strategies.component");
-var disoverview_routing_1 = require("./disoverview.routing");
-var viewer_module_1 = require("../viewer/viewer.module");
-//import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
-var DISOverviewModule = (function () {
-    function DISOverviewModule() {
+//import { MyCommonModule } from '../common-components/mycommon.module';
+var photo_viewer_component_1 = require("./photo-viewer.component");
+var video_viewer_component_1 = require("./video-viewer.component");
+var pdf_viewer_component_1 = require("./pdf-viewer.component");
+var ViewerModule = (function () {
+    function ViewerModule() {
     }
-    return DISOverviewModule;
+    return ViewerModule;
 }());
-DISOverviewModule = __decorate([
+ViewerModule = __decorate([
     core_1.NgModule({
         imports: [
             common_1.CommonModule,
             forms_1.FormsModule,
-            viewer_module_1.ViewerModule,
-            disoverview_routing_1.DISOverviewRouting
         ],
         declarations: [
-            mv_component_1.MVComponent,
-            org_component_1.OrgComponent,
-            strategies_component_1.StrategiesComponent
+            photo_viewer_component_1.PhotoViewerComponent,
+            video_viewer_component_1.VideoViewerComponent,
+            pdf_viewer_component_1.PdfViewerComponent
         ],
-        providers: []
+        providers: [],
+        exports: [
+            photo_viewer_component_1.PhotoViewerComponent,
+            video_viewer_component_1.VideoViewerComponent,
+            pdf_viewer_component_1.PdfViewerComponent
+        ]
     })
-], DISOverviewModule);
-exports.DISOverviewModule = DISOverviewModule;
+], ViewerModule);
+exports.ViewerModule = ViewerModule;

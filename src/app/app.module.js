@@ -9,10 +9,8 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 //ComponentModules
-//import { SynchronizationModule } from './components/synchronization/sync.module';
-var photo_sample_module_1 = require("./components/photo-sample/photo-sample.module");
-var video_sample_module_1 = require("./components/video-sample/video-sample.module");
 var disoverview_module_1 = require("./components/03-disoverview/disoverview.module");
+var distools_module_1 = require("./components/05-dis-tools/distools.module");
 //routing
 var app_routing_1 = require("./app.routing");
 var AppModule = (function () {
@@ -25,8 +23,7 @@ AppModule = __decorate([
         imports: [platform_browser_1.BrowserModule,
             //SynchronizationModule, 
             disoverview_module_1.DISOverviewModule,
-            photo_sample_module_1.PhotoSampleModule,
-            video_sample_module_1.VideoSampleModule,
+            distools_module_1.DISToolsModule,
             app_routing_1.AppRouting
         ],
         declarations: [app_component_1.AppComponent],

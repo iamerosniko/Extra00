@@ -8,31 +8,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
-var mv_component_1 = require("./mv.component");
-var org_component_1 = require("./org.component");
-var strategies_component_1 = require("./strategies.component");
-var disoverview_routing_1 = require("./disoverview.routing");
+var opt_component_1 = require("./opt.component");
+var distools_routing_1 = require("./distools.routing");
 var viewer_module_1 = require("../viewer/viewer.module");
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
-var DISOverviewModule = (function () {
-    function DISOverviewModule() {
+var DISToolsModule = (function () {
+    function DISToolsModule() {
     }
-    return DISOverviewModule;
+    return DISToolsModule;
 }());
-DISOverviewModule = __decorate([
+DISToolsModule = __decorate([
     core_1.NgModule({
         imports: [
             common_1.CommonModule,
             forms_1.FormsModule,
             viewer_module_1.ViewerModule,
-            disoverview_routing_1.DISOverviewRouting
+            distools_routing_1.DISToolsRouting
         ],
         declarations: [
-            mv_component_1.MVComponent,
-            org_component_1.OrgComponent,
-            strategies_component_1.StrategiesComponent
+            opt_component_1.OptComponent,
         ],
         providers: []
     })
-], DISOverviewModule);
-exports.DISOverviewModule = DISOverviewModule;
+], DISToolsModule);
+exports.DISToolsModule = DISToolsModule;

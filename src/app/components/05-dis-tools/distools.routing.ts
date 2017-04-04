@@ -3,14 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 //component
 import { OptComponent } from './opt.component';
 
-const photosampleRoutes: Routes = [
+const distoolsRoutes: Routes = [
     //paths
-    { path : 'opt', component: OptComponent },,
+    { path : 'opt', component: OptComponent },
 ];
 
  @NgModule ({
-     imports: [ RouterModule.forChild(photosampleRoutes) ],
+     imports: [ RouterModule.forChild(distoolsRoutes) ],
      exports: [ RouterModule ]
  })
 
-export class DISOverviewRouting {}
+export class DISToolsRouting {}
