@@ -3,9 +3,9 @@ import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import { Answer } from '../entities/answer';
 @Injectable()
-export class RandomQuestionService {
+export class AnswerService {
     private headers = new Headers({'Content-Type': 'application/json'});
-    private apiUrl = 'api/RandAnswers';  
+    private apiUrl = 'api/Answers';  
     
     constructor(private http: Http){}
     //pass the question id
