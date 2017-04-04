@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 //component
-import { OptComponent } from './opt.component';
-import { KhronosComponent } from './khronos.component';
+import { VLComponent } from './vl.component';
+import { WorkRuleComponent } from './workrule.component';
 
 const distoolsRoutes: Routes = [
     //paths
-    { path : 'opt', component: OptComponent },
-    { path : 'khronos', component: KhronosComponent },
+    { path : 'vacation-leave', component: VLComponent },
+    { path : 'work-rule', component: WorkRuleComponent },
 ];
 
  @NgModule ({
