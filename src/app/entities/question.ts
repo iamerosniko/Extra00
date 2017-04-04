@@ -1,12 +1,9 @@
-export class TempProject {
+export class Question {
     constructor (
-        public ProjectID : string,
-        public ProjectName: string,
-        public ProjectDesc : string,
-        public ProjectDatasource : string,
-        public ProjectDatabasename : string,
-        public ProjectUserID : string,
-        public ProjectPassword : string,
-        public ProjectIsActive: Boolean
+        public QuestionID: string,//primary key
+        public QuestionDesc: string,
+        public IsCommon : Boolean,
+        public IsMultipleAns : Boolean,
+        public IsActive : Boolean
     ){}
 }
