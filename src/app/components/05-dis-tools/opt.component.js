@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var OptComponent = (function () {
     function OptComponent() {
-        this.path = 'resources/workplace/16 - OPT doc.pdf';
     }
     return OptComponent;
 }());

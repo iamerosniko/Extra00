@@ -13,7 +13,6 @@ import { VideoViewerComponent } from './video-viewer.component';
     declarations: [
         PhotoViewerComponent,
         VideoViewerComponent,
-        PdfViewerComponent
     ],
     providers: [
     ],

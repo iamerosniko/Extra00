@@ -10,7 +10,6 @@ var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var opt_component_1 = require("./opt.component");
 var distools_routing_1 = require("./distools.routing");
-var viewer_module_1 = require("../viewer/viewer.module");
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
 var DISToolsModule = (function () {
     function DISToolsModule() {
@@ -22,7 +21,6 @@ DISToolsModule = __decorate([
         imports: [
             common_1.CommonModule,
             forms_1.FormsModule,
-            viewer_module_1.ViewerModule,
             distools_routing_1.DISToolsRouting
         ],
         declarations: [
