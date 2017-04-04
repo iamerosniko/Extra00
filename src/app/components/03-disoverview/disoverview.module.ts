@@ -7,7 +7,7 @@ import { OrgComponent } from './org.component';
 import { StrategiesComponent } from './strategies.component';
 
 import { DISOverviewRouting } from './disoverview.routing';
-import { PhotoViewerModule } from '../photo-viewer/photo-viewer.module';
+import { PhotoViewerModule } from '../viewer/photo-viewer.module';
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
 @NgModule({
     imports: [

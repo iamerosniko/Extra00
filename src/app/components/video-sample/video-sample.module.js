@@ -11,7 +11,7 @@ var forms_1 = require("@angular/forms");
 var video_sample_component_1 = require("./video-sample.component");
 var video_sample_routing_1 = require("./video-sample.routing");
 //import { PhotoViewerComponent } from '../common-components/photo-viewer.component';
-var photo_viewer_module_1 = require("../photo-viewer/photo-viewer.module");
+var photo_viewer_module_1 = require("../viewer/photo-viewer.module");
 var VideoSampleModule = (function () {
     function VideoSampleModule() {
     }

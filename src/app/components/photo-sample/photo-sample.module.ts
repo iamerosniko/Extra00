@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PhotoSampleComponent } from './photo-sample.component';
 import { PhotoSampleRouting } from './photo-sample.routing';
-import { PhotoViewerModule } from '../photo-viewer/photo-viewer.module';
+import { PhotoViewerModule } from '../viewer/photo-viewer.module';
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
 @NgModule({
     imports: [

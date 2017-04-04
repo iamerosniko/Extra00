@@ -12,7 +12,7 @@ var mv_component_1 = require("./mv.component");
 var org_component_1 = require("./org.component");
 var strategies_component_1 = require("./strategies.component");
 var disoverview_routing_1 = require("./disoverview.routing");
-var photo_viewer_module_1 = require("../photo-viewer/photo-viewer.module");
+var photo_viewer_module_1 = require("../viewer/photo-viewer.module");
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
 var DISOverviewModule = (function () {
     function DISOverviewModule() {

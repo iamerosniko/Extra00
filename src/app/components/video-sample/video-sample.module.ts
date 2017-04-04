@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { VideoSampleComponent } from './video-sample.component';
 import { VideoSampleRouting } from './video-sample.routing';
 //import { PhotoViewerComponent } from '../common-components/photo-viewer.component';
-import { PhotoViewerModule } from '../photo-viewer/photo-viewer.module';
+import { PhotoViewerModule } from '../viewer/photo-viewer.module';
 @NgModule({
     imports: [
         CommonModule,

@@ -10,7 +10,7 @@ var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var photo_sample_component_1 = require("./photo-sample.component");
 var photo_sample_routing_1 = require("./photo-sample.routing");
-var photo_viewer_module_1 = require("../photo-viewer/photo-viewer.module");
+var photo_viewer_module_1 = require("../viewer/photo-viewer.module");
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
 var PhotoSampleModule = (function () {
     function PhotoSampleModule() {
