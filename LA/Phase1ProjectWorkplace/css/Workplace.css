@@ -45,16 +45,48 @@
     font-size: 20px;
     padding-top: 15px; 
 }
-#UserDetail > a, #UserDetail{
+#UserDetails > div > a, #UserDetails{
     /*text-decoration: none;*/
     list-style-type: none; 
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     Color: #eee;
     font-weight: bold;  
     font-size: 18px;
-    padding-top: 17px !important; 
 }
+
+#BrandLogo, #WebsiteTitle, #UserDetails{
+    padding: 0px;
+    height: 100%
+}
+ #Logo{
+     width: 50%; 
+     height: 100%; 
+     padding: 10px 0 10px 25px;
+ }
+
+ #WebsiteTitle > div{
+     width: 100%; 
+     height: 100%; 
+     text-align: center;
+     padding-top: 17px
+ }
+ #Title{
+     font-size: 25px;
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+     Color: #eee;
+ }
+
+ #UserDetails > div{
+     width: 100%; 
+     height: 100%; 
+     text-align: right;
+     padding-right: 15px; 
+     padding-top: 23px;
+ }
+
+
 /*================================================================================*/
+/*Sidenav CSSs*/
 .nav > li > div > div > a{
     text-decoration: none;
     list-style-type: none; 
@@ -73,7 +105,7 @@
     padding: 0px;
 }
 
-.SideNavList {
+.SideNavList{
     padding: 0; 
     margin: 25px 0px 25px 15px;
 }
@@ -87,15 +119,47 @@
 }
 
 .nav > li > div:hover,
-.nav > li > div:focus{
+.nav > li > div:focus,
+.CollapseWithin > div > ul > li > a:hover,
+.CollapseWithin > div > ul > li > a:focus{
     background-color: #185c4c
 }
+
+.CollapseWithin{
+    margin: 10px auto 0px 20px;
+}
+
+.CollapseWithin > div > a{
+    list-style-type: none; 
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    Color: #eee;
+    font-weight: bold;  
+    font-size: 15px;
+}
+
+.CollapseWithin > div > ul > li > a{
+    /*text-decoration: underline;*/
+    list-style-type: none; 
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    Color: #eee;
+    font-weight: bold;  
+}
+.CollapseWithin > div > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+
 
 #TriBtn1, #TriBtn2, #TriBtn3, #TriBtn4{
     color: #fff; 
     font-size: 20px; 
     text-align: center;   
     padding-top: 25px; 
+}
+
+#TriBtn11, #TriBtn22, #TriBtn33, #TriBtn44{
+    color: #fff; 
+    text-align: center;  
 }
 
 #submenu1 > li > a,
@@ -108,7 +172,6 @@
     Color: #eee;
     font-weight: bold;  
     font-size: 15px;
-    
 }
 
 #submenu1 > li > a:hover,
