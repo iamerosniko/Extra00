@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="css/Workplace.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
         <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -34,125 +35,52 @@
         <div class="row" id="MainBody">
             <div class="col-xs-3" id="BodySideNav"> 
                 <div id="Sidenav" >
-                        <ul class="nav" >
-                            <div style="padding: 5px 0px" ></div>
-                            <li>
-                                <div class="row" > 
-                                    <div class="col-xs-11 SideNavList">
-                                        <a href="#">AVP VIDEO</a>
-                                    </div>
+
+                    <div id="MainMenu">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item" data-parent="#MainMenu">AVP VIDEO</a>                                        
+                            <a href="#" class="list-group-item" data-parent="#MainMenu">TL VIDEO</a>
+                            <a href="#demo1" id="btn-1" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu" onclick="ChangeToUp1()">MBPS DIS OVERVIEW <i id="TriBtn1" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                            <div class="collapse" id="demo1">
+                                <a href="javascript:;" class="list-group-item subitem" >DIS MISSION VISION</a>
+                                <a href="javascript:;" class="list-group-item subitem" >ORG CHART</a>
+                                <a href="javascript:;" class="list-group-item subitem" >STRATEGIES</a>
+                                <a href="javascript:;" class="list-group-item subitem" >SERVICE CATALOGUE</a>
+                                <a href="#SubMenu1" id="btn-11" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu1" onclick="ChangeToUpSubMenu1()">PROGRAMS<i id="TriBtn11" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                                <div class="collapse list-group-submenu" id="SubMenu1">
+                                    <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >ASPIRE</a>
+                                    <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >CARES</a>
+                                    <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >CAREERS</a>
+                                    <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >DIGERATI</a>
+                                    <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >MOTIVATE</a>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="row"> 
-                                    <div class="col-xs-11 SideNavList">
-                                        <a href="#">TL VIDEO</a>
-                                    </div>
+                            </div>
+                            <a href="#demo2"  id="btn-2" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu" onclick="ChangeToUp2()">TEAM OVERVIEW <i id="TriBtn2" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                            <div class="collapse" id="demo2">
+                                <a href="javascript:;" class="list-group-item subitem" style="padding-left: 35px;  font-size: 15px;">TEAM ORG CHART</a>
+                                <a href="#SubMenu2" id="btn-22" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2" onclick="ChangeToUpSubMenu2()">JOB MANAGEMENT PROGRAM<i id="TriBtn22" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                                <div class="collapse list-group-submenu" id="SubMenu2">
+                                    <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >TEAM SERVICES</a>
+                                    <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1">TEAM APPLICATIONS</a>
+                                    <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >TEAM TOOLS</a>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="row SideNavListCollapse" > 
-                                    <div class="col-xs-9 SideNavList">
-                                        <a href="#" id="btn-1"  onclick="ChangeToUp1()" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" >MBPS DIS OVERVIEW</a>
-                                        <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
-                                            <li><a href="#">DIS MISSION VISION</a></li>
-                                            <li><a href="#">ORG CHART</a></li>
-                                            <li><a href="#">STRATEGIES</a></li>
-                                            <li><a href="#">SERVICE CATALOGUE</a></li>
-                                            <li class="CollapseWithin">
-                                                <div class="col-xs-9">
-                                                    <a href="#" onclick="ChangeToUpSubMenu1()" id="btn-11"  data-toggle="collapse" data-target="#submenu11" aria-expanded="false" >PROGRAMS</a>
-                                                    <ul class="nav collapse" id="submenu11" role="menu" aria-labelledby="btn-11">
-                                                        <li><a href="#">ASPIRE</a></li>
-                                                        <li><a href="#">CARE</a></li>
-                                                        <li><a href="#">CAREERS</a></li>
-                                                        <li><a href="#">DIGERATI</a></li>
-                                                        <li><a href="#">MOTIVATE</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-1">
-                                                    <span id="TriBtn11" class="glyphicon glyphicon-triangle-bottom"></span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <span id="TriBtn1" class="glyphicon glyphicon-triangle-bottom"></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row SideNavListCollapse" > 
-                                    <div class="col-xs-9 SideNavList">
-                                        <a href="#" id="btn-2"  onclick="ChangeToUp2()" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">TEAM OVERVIEW</a>
-                                        <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-2">
-                                            <li><a href="#">TEAM ORG CHART</a></li>
-                                            <!--<li><a href="#">JOB MANAGEMENT PROGRAM</a></li>-->
-                                            <li class="CollapseWithin">
-                                                <div class="col-xs-9">
-                                                    <a href="#" onclick="ChangeToUpSubMenu2()" id="btn-22"  data-toggle="collapse" data-target="#submenu22" aria-expanded="false" >JOB MANAGEMENT PROGRAM</a>
-                                                    <ul class="nav collapse" id="submenu22" role="menu" aria-labelledby="btn-11">
-                                                        <li><a href="#">TEAM SERVICES</a></li>
-                                                        <li><a href="#">TEAM APPLICATION</a></li>
-                                                        <li><a href="#">TEAM TOOLS</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-xs-1">
-                                                    <span id="TriBtn22" class="glyphicon glyphicon-triangle-bottom"></span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <span id="TriBtn2" class="glyphicon glyphicon-triangle-bottom" ></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row SideNavListCollapse" > 
-                                    <div class="col-xs-9 SideNavList">
-                                        <a href="#" id="btn-3"  onclick="ChangeToUp3()" data-toggle="collapse" data-target="#submenu3" aria-expanded="false">MBPS MBPS DIS TOOLS</a>
-                                        <ul class="nav collapse" id="submenu3" role="menu" aria-labelledby="btn-3">
-                                            <li><a href="#">OPT</a></li>
-                                            <li><a href="#">WORKDAY</a></li>
-                                            <li><a href="#">KRONOS</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <span id="TriBtn3" class="glyphicon glyphicon-triangle-bottom"></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row SideNavListCollapse" > 
-                                    <div class="col-xs-9 SideNavList">
-                                        <a href="#" id="btn-4"  onclick="ChangeToUp4()" data-toggle="collapse" data-target="#submenu4" aria-expanded="false">POLICY</a>
-                                        <ul class="nav collapse" id="submenu4" role="menu" aria-labelledby="btn-4">
-                                            <li><a href="#">HOUSE RULES</a></li>
-                                            <li><a href="#">VACATION LEAVE</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <span id="TriBtn4" class="glyphicon glyphicon-triangle-bottom"></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row"> 
-                                    <div class="col-xs-11 SideNavList">
-                                        <a href="#">TAKE EXAM</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row"> 
-                                    <div class="col-xs-11 SideNavList">
-                                        <a href="#">KNOW MORE ABOUT DIS</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <a href="#demo3" class="list-group-item" id="btn-3" data-toggle="collapse" data-parent="#MainMenu"  onclick="ChangeToUp3()">MBPS DIS TOOLS<i id="TriBtn3" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                            <div class="collapse" id="demo3">
+                                <a href="javascript:;" class="list-group-item subitem">OPT</a>
+                                <a href="javascript:;" class="list-group-item subitem">WORKDAY</a>
+                                <a href="javascript:;" class="list-group-item subitem">KHRONOS</a>
+                            </div>
+                            <a href="#demo4" class="list-group-item" id="btn-4" data-toggle="collapse" data-parent="#MainMenu"  onclick="ChangeToUp4()">POLICY<i id="TriBtn4" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                            <div class="collapse" id="demo4">
+                                <a href="javascript:;" class="list-group-item subitem" >HOUSE RULES</a>
+                                <a href="javascript:;" class="list-group-item subitem" >VACATION LEAVE</a>
+                            </div>
+                            <a href="#" class="list-group-item" data-parent="#MainMenu">TAKE EXAM</a>                                        
+                            <a href="#" class="list-group-item" data-parent="#MainMenu">KNOW MORE ABOUT DIS</a>
+                        </div>
                     </div>
+                </div>
             </div>
             <div class="col-xs-9" id="BodyContent"> 
                 <div class="row">
