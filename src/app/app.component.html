@@ -39,23 +39,23 @@
                                 <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >MOTIVATE</a>
                             </div>
                         </div>
-                        <a href="#demo2"  id="btn-2" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu" onclick="ChangeToUp2()">TEAM OVERVIEW <i id="TriBtn2" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                        <a href="#demo2"  id="btn-2" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu"  (click)="changeArrow('TriBtn2')">TEAM OVERVIEW <i id="TriBtn2" class="glyphicon glyphicon-triangle-bottom"></i></a>
                         <div class="collapse" id="demo2">
                             <a href="javascript:;" class="list-group-item subitem" style="padding-left: 35px;  font-size: 15px;">TEAM ORG CHART</a>
-                            <a href="#SubMenu2" id="btn-22" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2" onclick="ChangeToUpSubMenu2()">JOB MANAGEMENT PROGRAM<i id="TriBtn22" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                            <a href="#SubMenu2" id="btn-22" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2" (click)="changeArrow('TriBtn22')">JOB MANAGEMENT PROGRAM<i id="TriBtn22" class="glyphicon glyphicon-triangle-bottom"></i></a>
                             <div class="collapse list-group-submenu" id="SubMenu2">
                                 <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >TEAM SERVICES</a>
                                 <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1">TEAM APPLICATIONS</a>
                                 <a href="#" class="list-group-item subsubItem" data-parent="#SubMenu1" >TEAM TOOLS</a>
                             </div>
                         </div>
-                        <a href="#demo3" class="list-group-item" id="btn-3" data-toggle="collapse" data-parent="#MainMenu"  onclick="ChangeToUp3()">MBPS DIS TOOLS<i id="TriBtn3" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                        <a href="#demo3" class="list-group-item" id="btn-3" data-toggle="collapse" data-parent="#MainMenu"  (click)="changeArrow('TriBtn3')">MBPS DIS TOOLS<i id="TriBtn3" class="glyphicon glyphicon-triangle-bottom"></i></a>
                         <div class="collapse" id="demo3">
                             <a routerLink="/opt" href="javascript:;" class="list-group-item subitem">OPT</a>
                             <a href="javascript:;" class="list-group-item subitem">WORKDAY</a>
                             <a routerLink="/khronos" href="javascript:;" class="list-group-item subitem">KHRONOS</a>
                         </div>
-                        <a href="#demo4" class="list-group-item" id="btn-4" data-toggle="collapse" data-parent="#MainMenu"  onclick="ChangeToUp4()">POLICY<i id="TriBtn4" class="glyphicon glyphicon-triangle-bottom"></i></a>
+                        <a href="#demo4" class="list-group-item" id="btn-4" data-toggle="collapse" data-parent="#MainMenu"  (click)="changeArrow('TriBtn4')">POLICY<i id="TriBtn4" class="glyphicon glyphicon-triangle-bottom"></i></a>
                         <div class="collapse" id="demo4">
                             <a routerLink="/work-rule" href="javascript:;" class="list-group-item subitem" >HOUSE RULES</a>
                             <a routerLink="/vacation-leave" href="javascript:;" class="list-group-item subitem" >VACATION LEAVE</a>
