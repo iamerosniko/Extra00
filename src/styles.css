@@ -66,7 +66,7 @@ h1 {
     height: 100%
 }
  #Logo{
-     width: 50%; 
+     width: 240px; 
      height: 100%; 
      padding: 10px 0 10px 25px;
  }
@@ -93,118 +93,69 @@ h1 {
 
 
 /*================================================================================*/
+
 /*Sidenav CSSs*/
-.nav > li > div > div > a{
+
+.list-group > .list-group-item {
     text-decoration: none;
     list-style-type: none; 
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     Color: #eee;
     font-weight: bold;  
     font-size: 18px;
+    background-color: #196856;
+    padding: 25px 0px 25px 25px;
 }
 
-.nav > li > div > div{
-    text-align: left !important;
+.list-group-item{
+    border: 0 none !important;
 }
 
-.nav > li > .row{
-    margin: 0px;
-    padding: 0px;
+.list-group-item:focus,
+.list-group-item:hover{
+    background: #00281F !important;
+    Color: #eee !important;
 }
 
-.SideNavList{
-    padding: 0; 
-    margin: 25px 0px 25px 15px;
+.list-group-item.subitem:focus,
+.list-group-item.subitem:hover{
+    background: #529082 !important;
+    Color: #eee !important;
 }
 
-.SideNavList > ul > li > a{
-    text-decoration: none;
-    list-style-type: none; 
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-weight: bold;  
+.list-group-item.subsubItem:focus,
+.list-group-item.subsubItem:hover{
+    background: #2E7364 !important;
+    Color: #eee !important;
+}
+
+.list-group-item.subitem{
+    padding-left: 35px;  
     font-size: 15px;
-}
-
-.nav > li > div:hover,
-.nav > li > div:focus,
-.CollapseWithin > div > ul > li > a:hover,
-.CollapseWithin > div > ul > li > a:focus{
-    background-color: #185c4c
-}
-
-.CollapseWithin{
-    margin: 10px auto 0px 20px;
-}
-
-.CollapseWithin > div > a{
-    list-style-type: none; 
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    Color: #eee;
-    font-weight: bold;  
-    font-size: 15px;
-}
-
-.CollapseWithin > div > ul > li > a{
-    /*text-decoration: underline;*/
-    list-style-type: none; 
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    Color: #eee;
+    background: #185c4c;
+    color: #eee;
     font-weight: bold;  
 }
-.CollapseWithin > div > ul > li > a:hover{
-    text-decoration: underline;
+
+.list-group-item.subsubItem{
+    padding-left: 55px;
+    background: #185c4c;
+    font-size: 13px;
+    color: #eee;
 }
-
-
 
 #TriBtn1, #TriBtn2, #TriBtn3, #TriBtn4{
     color: #fff; 
     font-size: 20px; 
-    text-align: center;   
-    padding-top: 25px; 
+    float: right;
+    padding-right: 15px; 
 }
 
 #TriBtn11, #TriBtn22, #TriBtn33, #TriBtn44{
     color: #fff; 
-    text-align: center;  
+    text-align: center; 
+    float: right;
+    padding-right: 15px;
 }
-
-#submenu1 > li > a,
-#submenu2 > li > a,
-#submenu3 > li > a,
-#submenu4 > li > a{
-    text-decoration: none;
-    list-style-type: none; 
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    Color: #eee;
-    font-weight: bold;  
-    font-size: 15px;
-}
-
-#submenu1 > li > a:hover,
-#submenu1 > li > a:focus,
-#submenu2 > li > a:hover,
-#submenu2 > li > a:focus,
-#submenu3 > li > a:hover,
-#submenu3 > li > a:focus,
-#submenu4 > li > a:hover,
-#submenu4 > li > a:focus{
-    text-decoration: underline;
-    background-color: #185c4c
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
