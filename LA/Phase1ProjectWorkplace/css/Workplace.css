@@ -20,7 +20,7 @@
 #BodySideNav{
     
     background:#196856; 
-    margin: 0px; 
+    margin: 0px;
     display: block; 
     height: 93vh; 
     padding: 0px;
@@ -28,11 +28,12 @@
 }
 
 #BodyContent{
-    background: #f1f1f1;
-     margin: 0px; 
-     display: block; 
-     height: 93vh;
-      padding: 0px;
+    background: #f1f1f1; 
+    display: block; 
+    height: 93vh;
+    padding: 0px 15px;
+    margin: 0px;
+	
 }
 /*================================================================================*/
 /*Header CSSs*/
