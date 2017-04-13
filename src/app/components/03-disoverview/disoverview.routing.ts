@@ -5,7 +5,7 @@ import { MVComponent } from './mv.component';
 import { OrgComponent } from './org.component';
 import { StrategiesComponent } from './strategies.component';
 
-const photosampleRoutes: Routes = [
+const routes: Routes = [
     //paths
     { path : 'mission-vision', component: MVComponent },
     { path : 'organization', component: OrgComponent },
@@ -13,7 +13,7 @@ const photosampleRoutes: Routes = [
 ];
 
  @NgModule ({
-     imports: [ RouterModule.forChild(photosampleRoutes) ],
+     imports: [ RouterModule.forChild(routes) ],
      exports: [ RouterModule ]
  })
 

@@ -4,14 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { VLComponent } from './vl.component';
 import { WorkRuleComponent } from './workrule.component';
 
-const distoolsRoutes: Routes = [
+const routes: Routes = [
     //paths
     { path : 'vacation-leave', component: VLComponent },
     { path : 'work-rule', component: WorkRuleComponent },
 ];
 
  @NgModule ({
-     imports: [ RouterModule.forChild(distoolsRoutes) ],
+     imports: [ RouterModule.forChild(routes) ],
      exports: [ RouterModule ]
  })
 

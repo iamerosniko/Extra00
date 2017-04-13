@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 //component
-// import { OptComponent } from './opt.component';
-// import { KhronosComponent } from './khronos.component';
+import { ExamComponent } from './exam.component';
 
-const distoolsRoutes: Routes = [
+const routes: Routes = [
     //paths
-    // { path : 'opt', component: OptComponent },
+    { path : 'Quiz', component: ExamComponent },
     // { path : 'khronos', component: KhronosComponent },
 ];
 
  @NgModule ({
-     imports: [ RouterModule.forChild(distoolsRoutes) ],
+     imports: [ RouterModule.forChild(routes) ],
      exports: [ RouterModule ]
  })
 

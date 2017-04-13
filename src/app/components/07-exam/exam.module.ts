@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+import { ExamComponent } from './exam.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -9,7 +10,7 @@ import { FormsModule } from '@angular/forms';
         
     ],
     declarations: [
-        
+        ExamComponent
     ],
     providers: [
     ]

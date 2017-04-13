@@ -4,14 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { OptComponent } from './opt.component';
 import { KhronosComponent } from './khronos.component';
 
-const distoolsRoutes: Routes = [
+const routes: Routes = [
     //paths
     { path : 'opt', component: OptComponent },
     { path : 'khronos', component: KhronosComponent },
 ];
 
  @NgModule ({
-     imports: [ RouterModule.forChild(distoolsRoutes) ],
+     imports: [ RouterModule.forChild(routes) ],
      exports: [ RouterModule ]
  })
 
