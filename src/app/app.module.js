@@ -12,6 +12,7 @@ var app_component_1 = require("./app.component");
 var disoverview_module_1 = require("./components/03-disoverview/disoverview.module");
 var distools_module_1 = require("./components/05-dis-tools/distools.module");
 var policy_module_1 = require("./components/06-policy/policy.module");
+var exam_module_1 = require("./components/07-exam/exam.module");
 //routing
 var app_routing_1 = require("./app.routing");
 var AppModule = (function () {
@@ -26,6 +27,7 @@ AppModule = __decorate([
             disoverview_module_1.DISOverviewModule,
             distools_module_1.DISToolsModule,
             policy_module_1.PolicyModule,
+            exam_module_1.ExamModule,
             app_routing_1.AppRouting
         ],
         declarations: [app_component_1.AppComponent],

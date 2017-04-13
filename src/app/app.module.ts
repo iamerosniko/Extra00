@@ -5,6 +5,7 @@ import { AppComponent }  from './app.component';
 import { DISOverviewModule } from './components/03-disoverview/disoverview.module';
 import { DISToolsModule } from './components/05-dis-tools/distools.module';
 import { PolicyModule } from './components/06-policy/policy.module';
+import { ExamModule } from './components/07-exam/exam.module';
 //routing
 import { AppRouting } from './app.routing';
 @NgModule({
@@ -13,6 +14,7 @@ import { AppRouting } from './app.routing';
                   DISOverviewModule,
                   DISToolsModule,
                   PolicyModule,
+                  ExamModule,
                   AppRouting 
                 ],
   declarations: [ AppComponent ],

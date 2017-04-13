@@ -6,24 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-//component
-var opt_component_1 = require("./opt.component");
-var khronos_component_1 = require("./khronos.component");
-var routes = [
-    //paths
-    { path: 'opt', component: opt_component_1.OptComponent },
-    { path: 'khronos', component: khronos_component_1.KhronosComponent },
-];
-var DISToolsRouting = (function () {
-    function DISToolsRouting() {
+var ExamComponent = (function () {
+    function ExamComponent() {
     }
-    return DISToolsRouting;
+    return ExamComponent;
 }());
-DISToolsRouting = __decorate([
-    core_1.NgModule({
-        imports: [router_1.RouterModule.forChild(routes)],
-        exports: [router_1.RouterModule]
+ExamComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        templateUrl: 'exam.component.html'
     })
-], DISToolsRouting);
-exports.DISToolsRouting = DISToolsRouting;
+], ExamComponent);
+exports.ExamComponent = ExamComponent;

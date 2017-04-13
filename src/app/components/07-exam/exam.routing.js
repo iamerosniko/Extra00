@@ -8,22 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 //component
-var opt_component_1 = require("./opt.component");
-var khronos_component_1 = require("./khronos.component");
+var exam_component_1 = require("./exam.component");
 var routes = [
     //paths
-    { path: 'opt', component: opt_component_1.OptComponent },
-    { path: 'khronos', component: khronos_component_1.KhronosComponent },
+    { path: 'Quiz', component: exam_component_1.ExamComponent },
 ];
-var DISToolsRouting = (function () {
-    function DISToolsRouting() {
+var ExamRouting = (function () {
+    function ExamRouting() {
     }
-    return DISToolsRouting;
+    return ExamRouting;
 }());
-DISToolsRouting = __decorate([
+ExamRouting = __decorate([
     core_1.NgModule({
         imports: [router_1.RouterModule.forChild(routes)],
         exports: [router_1.RouterModule]
     })
-], DISToolsRouting);
-exports.DISToolsRouting = DISToolsRouting;
+], ExamRouting);
+exports.ExamRouting = ExamRouting;
