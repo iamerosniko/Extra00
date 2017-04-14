@@ -13,13 +13,18 @@ import { AnswerService } from '../../services/answer.service';
 export class ExamFormComponent  { 
     @Input() question:Question;
 
+    answers:Answer[]=[];
 
     constructor(
         public answerService: AnswerService
     ){ }
     
-    getQuestion():void{
-
+    getAnswers():void{
+        this.answerService.getAnswers(this.question.QuestionID)
+            .then(ans => this.answers = ans)
+            .catch(()=>{
+                console.log('error on getting answers - getAnswers()');
+            });
     }
 
 }

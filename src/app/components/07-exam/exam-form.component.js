@@ -16,8 +16,15 @@ var answer_service_1 = require("../../services/answer.service");
 var ExamFormComponent = (function () {
     function ExamFormComponent(answerService) {
         this.answerService = answerService;
+        this.answers = [];
     }
-    ExamFormComponent.prototype.getQuestion = function () {
+    ExamFormComponent.prototype.getAnswers = function () {
+        var _this = this;
+        this.answerService.getAnswers(this.question.QuestionID)
+            .then(function (ans) { return _this.answers = ans; })
+            .catch(function () {
+            console.log('error on getting answers - getAnswers()');
+        });
     };
     return ExamFormComponent;
 }());
