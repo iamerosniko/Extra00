@@ -9,6 +9,12 @@ var core_1 = require("@angular/core");
 var ExamComponent = (function () {
     function ExamComponent() {
         this.sample = 'sample1';
+        this.seasons = [
+            'Winter',
+            'Spring',
+            'Summer',
+            'Autumn',
+        ];
     }
     return ExamComponent;
 }());

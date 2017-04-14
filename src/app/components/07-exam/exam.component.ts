@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
 })
 export class ExamComponent  { 
     sample:string='sample1';
+    favoriteSeason: string;
+
+    seasons = [
+        'Winter',
+        'Spring',
+        'Summer',
+        'Autumn',
+    ];
 }

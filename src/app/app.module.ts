@@ -1,6 +1,10 @@
 import { NgModule }      from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
+
+import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //ComponentModules
 import { DISOverviewModule } from './components/03-disoverview/disoverview.module';
 import { DISToolsModule } from './components/05-dis-tools/distools.module';
@@ -10,11 +14,13 @@ import { ExamModule } from './components/07-exam/exam.module';
 import { AppRouting } from './app.routing';
 @NgModule({
   imports:      [ BrowserModule , 
+                  CommonModule,
                   //SynchronizationModule, 
                   DISOverviewModule,
                   DISToolsModule,
                   PolicyModule,
                   ExamModule,
+                  MaterialModule,
                   AppRouting 
                 ],
   declarations: [ AppComponent ],

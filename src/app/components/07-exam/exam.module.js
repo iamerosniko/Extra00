@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
+var material_1 = require("@angular/material");
 var exam_component_1 = require("./exam.component");
 var exam_routing_1 = require("./exam.routing");
 var ExamModule = (function () {
@@ -20,6 +21,7 @@ ExamModule = __decorate([
         imports: [
             common_1.CommonModule,
             forms_1.FormsModule,
+            material_1.MaterialModule,
             exam_routing_1.ExamRouting
         ],
         declarations: [

@@ -21,4 +21,5 @@ export class AppComponent  {
         }
         else document.getElementById(myElem).className = "glyphicon glyphicon-triangle-bottom";
     }
+
 }
