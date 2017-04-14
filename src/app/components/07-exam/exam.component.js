@@ -21,7 +21,8 @@ var ExamComponent = (function () {
 ExamComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        templateUrl: 'exam.component.html'
+        templateUrl: 'exam.component.html',
+        styleUrls: ['exam.css'],
     })
 ], ExamComponent);
 exports.ExamComponent = ExamComponent;

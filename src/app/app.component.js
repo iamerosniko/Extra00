@@ -9,12 +9,6 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular';
-        this.seasons = [
-            'Winter',
-            'Spring',
-            'Summer',
-            'Autumn',
-        ];
     }
     AppComponent.prototype.changeArrow = function (myElem) {
         console.log(document.getElementById(myElem).className);
