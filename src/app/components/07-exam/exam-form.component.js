@@ -16,6 +16,7 @@ var answer_service_1 = require("../../services/answer.service");
 var ExamFormComponent = (function () {
     function ExamFormComponent(answerService) {
         this.answerService = answerService;
+        this.answer = '';
         this.answers = [];
     }
     ExamFormComponent.prototype.getAnswers = function () {
@@ -25,6 +26,9 @@ var ExamFormComponent = (function () {
             .catch(function () {
             console.log('error on getting answers - getAnswers()');
         });
+    };
+    ExamFormComponent.prototype.ngOnInit = function () {
+        this.getAnswers();
     };
     return ExamFormComponent;
 }());

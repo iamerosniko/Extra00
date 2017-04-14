@@ -1,4 +1,4 @@
-import { Component, Input, Output} from '@angular/core';
+import { Component, Input, Output, OnInit} from '@angular/core';
 /* entities */
 import { Question } from '../../entities/question';
 import { Answer } from '../../entities/answer';
@@ -10,11 +10,11 @@ import { AnswerService } from '../../services/answer.service';
     selector: `exam-form`,
     templateUrl:'exam.component.html'
 })
-export class ExamFormComponent  { 
+export class ExamFormComponent implements OnInit { 
     @Input() question:Question;
-
+    answer:string='';
     answers:Answer[]=[];
-
+    
     constructor(
         public answerService: AnswerService
     ){ }
@@ -27,4 +27,7 @@ export class ExamFormComponent  {
             });
     }
 
+    ngOnInit(){
+        this.getAnswers();
+    }
 }
