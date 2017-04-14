@@ -4,4 +4,5 @@ import { Component } from '@angular/core';
     templateUrl:'exam.component.html'
 })
 export class ExamComponent  { 
+    sample:string='sample1';
 }

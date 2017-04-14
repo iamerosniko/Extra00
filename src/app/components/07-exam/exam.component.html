@@ -4,3 +4,8 @@
   <div class="panel-body">Panel Content</div>
   <br />
 </div>
+
+<input type="radio" [ngModel]="{checked: sample == 'male'}" (ngModelChange)="sample='male'"  name="sex" value="male" />Male<br>
+<input type="radio" [ngModel]="{checked:sample == 'female'}"(ngModelChange)="sample='female'" name="sex" value="female" />Female
+
+{{sample}}
