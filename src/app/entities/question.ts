@@ -4,6 +4,7 @@ export class Question {
         public QuestionDesc: string,
         public IsCommon : Boolean,
         public IsMultipleAns : Boolean,
-        public IsActive : Boolean
+        public IsActive : Boolean,
+        public Answer: Boolean
     ){}
 }

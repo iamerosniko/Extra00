@@ -12,6 +12,8 @@ var forms_1 = require("@angular/forms");
 var material_1 = require("@angular/material");
 var exam_component_1 = require("./exam.component");
 var exam_routing_1 = require("./exam.routing");
+var random_question_service_1 = require("../../services/random-question.service");
+var answer_service_1 = require("../../services/answer.service");
 var ExamModule = (function () {
     function ExamModule() {
     }
@@ -28,7 +30,10 @@ ExamModule = __decorate([
         declarations: [
             exam_component_1.ExamComponent
         ],
-        providers: []
+        providers: [
+            random_question_service_1.RandomQuestionService,
+            answer_service_1.AnswerService
+        ]
     })
 ], ExamModule);
 exports.ExamModule = ExamModule;

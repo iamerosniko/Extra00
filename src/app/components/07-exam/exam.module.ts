@@ -6,6 +6,9 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExamComponent } from './exam.component';
 import { ExamRouting } from './exam.routing';
+
+import { RandomQuestionService } from '../../services/random-question.service';
+import { AnswerService } from '../../services/answer.service';
 @NgModule({
     imports: [
         CommonModule,
@@ -17,6 +20,8 @@ import { ExamRouting } from './exam.routing';
         ExamComponent
     ],
     providers: [
+        RandomQuestionService,
+        AnswerService
     ]
 })
 
