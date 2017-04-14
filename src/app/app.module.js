@@ -9,7 +9,6 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-var material_1 = require("@angular/material");
 //ComponentModules
 var disoverview_module_1 = require("./components/03-disoverview/disoverview.module");
 var distools_module_1 = require("./components/05-dis-tools/distools.module");
@@ -31,7 +30,6 @@ AppModule = __decorate([
             distools_module_1.DISToolsModule,
             policy_module_1.PolicyModule,
             exam_module_1.ExamModule,
-            material_1.MaterialModule,
             app_routing_1.AppRouting
         ],
         declarations: [app_component_1.AppComponent],

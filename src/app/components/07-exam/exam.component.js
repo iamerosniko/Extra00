@@ -23,6 +23,9 @@ var ExamComponent = (function () {
         ];
     }
     ExamComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.randomQuestionService.getQuestions()
+            .then(function (rq) { return _this.questions = rq; });
     };
     return ExamComponent;
 }());

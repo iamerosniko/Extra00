@@ -23,7 +23,8 @@ export class ExamComponent implements OnInit {
     ];
 
     ngOnInit(){
-
+        this.randomQuestionService.getQuestions()
+            .then(rq=>this.questions=rq);
     }
     
 }
