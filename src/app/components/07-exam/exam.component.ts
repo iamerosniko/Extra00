@@ -15,6 +15,7 @@ export class ExamComponent implements OnInit {
     constructor(
         public randomQuestionService: RandomQuestionService
     ){ }
+    
     seasons = [
         'Winter',
         'Spring',
