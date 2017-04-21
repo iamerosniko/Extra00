@@ -8,7 +8,8 @@ import { AnswerService } from '../../services/answer.service';
 @Component({
     moduleId: module.id,
     selector: `exam-form`,
-    templateUrl:'exam.component.html'
+    templateUrl:'exam-form.component.html',
+    styleUrls: ['exam.css'],
 })
 export class ExamFormComponent implements OnInit { 
     @Input() question:Question;
