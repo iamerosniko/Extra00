@@ -5,6 +5,6 @@ export class Question {
         public IsCommon : Boolean,
         public IsMultipleAns : Boolean,
         public IsActive : Boolean,
-        public Answer: Boolean
+        public Answer: number
     ){}
 }

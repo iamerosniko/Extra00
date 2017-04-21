@@ -1,4 +1,4 @@
-import { Component, Input, Output, OnInit} from '@angular/core';
+import { Component, Input, Output, OnInit, EventEmitter} from '@angular/core';
 /* entities */
 import { Question } from '../../entities/question';
 import { Answer } from '../../entities/answer';
@@ -9,10 +9,11 @@ import { AnswerService } from '../../services/answer.service';
     moduleId: module.id,
     selector: `exam-form`,
     templateUrl:'exam-form.component.html',
-    styleUrls: ['exam.css'],
+    outputs: []
 })
 export class ExamFormComponent implements OnInit { 
     @Input() question:Question;
+    @Output() counterChange = new EventEmitter();
     answer:string='';
     answers:Answer[]=[];
     
@@ -20,6 +21,12 @@ export class ExamFormComponent implements OnInit {
         public answerService: AnswerService
     ){ }
     
+    getAnswer(ans:boolean){
+        var userAnswer = ans==true ? 1 : -1 ;
+        this.question.Answer=userAnswer;
+        this.counterChange.emit( this.question);
+    }
+
     getAnswers():void{
         this.answerService.getAnswers(this.question.QuestionID)
             .then(ans => this.answers = ans)
@@ -31,4 +38,5 @@ export class ExamFormComponent implements OnInit {
     ngOnInit(){
         this.getAnswers();
     }
+    
 }

@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
 export class AppComponent  { 
   name = 'Angular'; 
     changeArrow(myElem:string):void{
-        console.log(document.getElementById(myElem).className);
+        //console.log(document.getElementById(myElem).className);
         if(document.getElementById(myElem).className == "glyphicon glyphicon-triangle-bottom"){
             document.getElementById(myElem).className = "glyphicon glyphicon-triangle-top";
         }
