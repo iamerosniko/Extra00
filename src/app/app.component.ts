@@ -1,19 +1,21 @@
 import { Component } from '@angular/core';
+import { AuthService } from './services/auth.service';
+import { Auth } from './entities/auth';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  // template: `<h1>Hello {{name}}</h1>
-  //     <ul class="nav nav-tabs">
-  //           <li role="presentation"><a routerLink="/viewphoto">photo-sample</a></li>
-  //           <li role="presentation"><a routerLink="/viewvideo">Follow up Items</a></li>
-            
-            
-  //       </ul>
-  // <router-outlet></router-outlet>`,
   templateUrl: 'app.component.html'
 })
-export class AppComponent  { 
-    isAuth:boolean=false; 
+export class AppComponent {
+    auth:Auth=new Auth(false,'','');
+    
+    constructor(
+        public authService: AuthService
+    ){ 
+        this.authService.getAuthorization()
+            .then(auth => this.auth =auth );
+    }
+    
     changeArrow(myElem:string):void{
         //console.log(document.getElementById(myElem).className);
         if(document.getElementById(myElem).className == "glyphicon glyphicon-triangle-bottom"){

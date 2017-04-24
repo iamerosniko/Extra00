@@ -11,6 +11,8 @@ import { PolicyModule } from './components/06-policy/policy.module';
 import { ExamModule } from './components/07-exam/exam.module';
 //routing
 import { AppRouting } from './app.routing';
+//services
+import { AuthService } from './services/auth.service';
 @NgModule({
   imports:      [ BrowserModule , 
                   CommonModule,
@@ -22,6 +24,7 @@ import { AppRouting } from './app.routing';
                   AppRouting 
                 ],
   declarations: [ AppComponent,NonAuthComponent,AuthUserComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [AuthService]
 })
 export class AppModule { }
