@@ -1,4 +1,4 @@
-export class Examinees {
+export class Examinee {
     constructor (
         public ExamineeID : string,
         public PersonID : string,

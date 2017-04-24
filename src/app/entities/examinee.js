@@ -1,6 +1,6 @@
 "use strict";
-var Examinees = (function () {
-    function Examinees(ExamineeID, PersonID, CodeNum, SubjectID, DateCompleted, Score, Items) {
+var Examinee = (function () {
+    function Examinee(ExamineeID, PersonID, CodeNum, SubjectID, DateCompleted, Score, Items) {
         this.ExamineeID = ExamineeID;
         this.PersonID = PersonID;
         this.CodeNum = CodeNum;
@@ -9,6 +9,6 @@ var Examinees = (function () {
         this.Score = Score;
         this.Items = Items;
     }
-    return Examinees;
+    return Examinee;
 }());
-exports.Examinees = Examinees;
+exports.Examinee = Examinee;
