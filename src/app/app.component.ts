@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
   templateUrl: 'app.component.html'
 })
 export class AppComponent  { 
-  name = 'Angular'; 
+    isAuth:boolean=false; 
     changeArrow(myElem:string):void{
         //console.log(document.getElementById(myElem).className);
         if(document.getElementById(myElem).className == "glyphicon glyphicon-triangle-bottom"){
@@ -21,5 +21,4 @@ export class AppComponent  {
         }
         else document.getElementById(myElem).className = "glyphicon glyphicon-triangle-bottom";
     }
-
 }
