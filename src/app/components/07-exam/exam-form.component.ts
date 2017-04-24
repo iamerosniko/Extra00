@@ -13,7 +13,9 @@ import { AnswerService } from '../../services/answer.service';
 })
 export class ExamFormComponent implements OnInit { 
     @Input() question:Question;
-    @Output() counterChange = new EventEmitter();
+    @Output() answerChange = new EventEmitter();
+    @Output() sample:EventEmitter<string>=new EventEmitter();
+
     answer:string='';
     answers:Answer[]=[];
     
@@ -24,7 +26,8 @@ export class ExamFormComponent implements OnInit {
     getAnswer(ans:boolean){
         var userAnswer = ans==true ? 1 : -1 ;
         this.question.Answer=userAnswer;
-        this.counterChange.emit( this.question);
+        this.answerChange.emit(this.question);
+        this.sample.emit('complete');
     }
 
     getAnswers():void{

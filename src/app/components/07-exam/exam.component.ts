@@ -8,22 +8,24 @@ import { Question } from '../../entities/question';
 })
 export class ExamComponent implements OnInit { 
     questions:Question[]=[];
+    canSubmit:boolean=false;
 
     constructor(
         public randomQuestionService: RandomQuestionService
     ){ }
     
-    checkAnswers():boolean{
-        var ctr:number=0;
-        for (let question of this.questions) {
-           ctr =+ question.Answer==0 ? 1 : 0;
-        }
-        return ctr==0 ? true : false;
-    }
 
     ngOnInit(){
         this.randomQuestionService.getQuestions()
             .then(rq=>this.questions=rq);
     }
     
+    checkAnswers(){
+        var ctr:number=0;
+        for (let question of this.questions) {
+            //console.log(question.Answer);
+            ctr = ctr + (question.Answer==0 ? 1 : 0);
+        }
+        this.canSubmit=ctr==0;
+    }
 }
