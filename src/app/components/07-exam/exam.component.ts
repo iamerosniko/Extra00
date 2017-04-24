@@ -3,6 +3,8 @@ import { RandomQuestionService } from '../../services/random-question.service';
 import { ActivatedRoute,  Params, Router } from '@angular/router';
 import { Question } from '../../entities/question';
 import { Examinees } from '../../entities/examinees';
+import { UUID } from 'angular2-uuid';
+
 @Component({
     moduleId: module.id,
     templateUrl:'exam.component.html'
@@ -12,13 +14,15 @@ export class ExamComponent implements OnInit {
     canSubmit:boolean=false;
     score:number = 0;
     viewScore:boolean=false;
-    examinee:Examinees=new Examinees();
-
+    examinee:Examinees=new Examinees( UUID.UUID(), UUID.UUID(),0,'',new Date(),0,0);
+    username:string='';
     constructor(
         public randomQuestionService: RandomQuestionService,
         private route: ActivatedRoute,
         private router: Router
-    ){ }
+    ){ 
+        this.getExamineeInfo();
+    }
     
 
     ngOnInit(){
@@ -43,8 +47,8 @@ export class ExamComponent implements OnInit {
 
     }
 
-    getselectedDetailID(){
+    getExamineeInfo(){
         this.route.params.subscribe(params => {
-            this.projectID = params['id'];});    
+            this.username = params['id'];});    
     }
 }
