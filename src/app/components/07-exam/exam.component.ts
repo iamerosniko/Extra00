@@ -16,7 +16,7 @@ export class ExamComponent implements OnInit {
     canSubmit:boolean=false;
     score:number = 0;
     viewScore:boolean=false;
-    examinee:Examinee=new Examinee( UUID.UUID(), UUID.UUID(),0,'',new Date(),0,0);
+    examinee:Examinee=new Examinee( UUID.UUID(), UUID.UUID(),0,'696bc6f9-d758-452e-b0d1-d40ebbcfd342',new Date(),0,0);
     username:string='';
 
     constructor(
@@ -50,13 +50,17 @@ export class ExamComponent implements OnInit {
     //submits the score
     submitScore():void{
         this.viewScore=true;
+        this.examinee.DateCompleted=new Date();
+        this.examinee.Score=this.score;
         //service for posting score to PW_Examiners
-
+        this.examineeService.postExaminee(this.examinee);
     }
 
     getExamineeInfo(){
         this.route.params.subscribe(params => {
-            this.username = params['id'];});    
+            this.username = params['id'];}); 
+        this.personService.getPerson(this.username)
+            .then( p => this.examinee.PersonID = p.PersonID )   
     }
     getExamDetail(){
         this.examinee.Items= this.questions.length;

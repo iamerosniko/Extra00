@@ -10,7 +10,7 @@ export class PersonService {
     constructor(private http: Http){}
     //pass the question id
     getPerson(username: string): Promise<Person> {
-        const url = `${this.apiUrl}/${username}`;
+        const url = `${this.apiUrl}/GetPW_Person/?username=${username}`;
         return this.http
                 .get(url)
                 .toPromise()

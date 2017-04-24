@@ -19,7 +19,7 @@ var PersonService = (function () {
     }
     //pass the question id
     PersonService.prototype.getPerson = function (username) {
-        var url = this.apiUrl + "/" + username;
+        var url = this.apiUrl + "/GetPW_Person/?username=" + username;
         return this.http
             .get(url)
             .toPromise()
