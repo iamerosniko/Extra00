@@ -16,6 +16,7 @@ var ExamComponent = (function () {
         this.questions = [];
         this.canSubmit = false;
         this.score = 0;
+        this.viewScore = false;
     }
     ExamComponent.prototype.ngOnInit = function () {
         var _this = this;

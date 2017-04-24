@@ -10,6 +10,7 @@ export class ExamComponent implements OnInit {
     questions:Question[]=[];
     canSubmit:boolean=false;
     score:number = 0;
+    viewScore:boolean=false;
 
     constructor(
         public randomQuestionService: RandomQuestionService
