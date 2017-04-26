@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
     templateUrl:`strategies.component.html`
 })
 export class StrategiesComponent  { 
-    path:string = 'resources/workplace/05 - stratergies.jpg';
+    path:string = 'resources/workplace/05 - strategies/DISStrategies.pptx.png';
 }
