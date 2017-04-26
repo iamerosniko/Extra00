@@ -5,6 +5,7 @@ import { AppComponent }  from './app.component';
 import { NonAuthComponent } from './non-auth';
 import { AuthUserComponent } from './auth-user';
 //ComponentModules
+import { TLModule } from './components/02-tl/tl.module';
 import { DISOverviewModule } from './components/03-disoverview/disoverview.module';
 import { DISToolsModule } from './components/05-dis-tools/distools.module';
 import { PolicyModule } from './components/06-policy/policy.module';
@@ -16,7 +17,7 @@ import { AuthService } from './services/auth.service';
 @NgModule({
   imports:      [ BrowserModule , 
                   CommonModule,
-                  //SynchronizationModule, 
+                  TLModule,
                   DISOverviewModule,
                   DISToolsModule,
                   PolicyModule,
