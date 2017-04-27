@@ -7,6 +7,7 @@ import { AuthUserComponent } from './auth-user';
 //ComponentModules
 import { TLModule } from './components/02-tl/tl.module';
 import { DISOverviewModule } from './components/03-disoverview/disoverview.module';
+import { TeamModule } from './components/04-team/team.module';
 import { DISToolsModule } from './components/05-dis-tools/distools.module';
 import { PolicyModule } from './components/06-policy/policy.module';
 import { ExamModule } from './components/07-exam/exam.module';
@@ -19,6 +20,7 @@ import { AuthService } from './services/auth.service';
                   CommonModule,
                   TLModule,
                   DISOverviewModule,
+                  TeamModule,
                   DISToolsModule,
                   PolicyModule,
                   ExamModule,
