@@ -26,11 +26,13 @@ body {
 }
 .navbar-green .navbar-brand:hover,
 .navbar-green .navbar-brand:focus {
+    transition: all 0.3s;
     color: #9f9f9f;
     background-color: transparent;
 }
 .navbar-green .navbar-nav > li > a:hover,
 .navbar-green .navbar-nav > li > a:focus {
+    transition: all 0.3s;
     color: #fff;
     background-color: #196856;
 }
@@ -46,8 +48,9 @@ body {
     color: #ffffff;
     background-color: transparent;
 }
-.navbar-blgreenue .navbar-toggle:hover,
+.navbar-green .navbar-toggle:hover,
 .navbar-green .navbar-toggle:focus {
+    transition: all 0.3s;
     background-color: #196856; /*002d5b*/
 }
 .navbar-green .navbar-toggle .icon-bar {
@@ -77,6 +80,37 @@ body {
     top: 0;
     text-align: center;
     margin: auto;
-  height:100%;
+    height:100%;
 }
 
+
+.content-img {
+    width: 80%;
+    height: auto;
+}
+
+.navbar-fixed-top {
+    left:230px;
+    -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+
+@media (max-width: 767px) { 
+    .navbar-fixed-top {
+        left:50px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}
+
+.main-body {
+    padding-top:60px;
+}
+
+.breadcrumb {
+    background-color: #fefefe;
+}
