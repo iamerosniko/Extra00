@@ -98,6 +98,10 @@ body {
 }
 
 @media (max-width: 767px) { 
+    .content-img {
+        width: 100%;
+        height: auto;
+    }
     .navbar-fixed-top {
         left:50px;
         -webkit-transition: all 0.5s ease;
