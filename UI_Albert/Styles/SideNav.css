@@ -88,6 +88,7 @@
 
 .sidebar-wrapper .sublinks {
     background-color: #9d9c9c;
+    font-size:medium;
 }
 
 .sidebar-wrapper .sublinks a.list-group-item {
@@ -127,9 +128,9 @@ a.list-group-item:hover,
 button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
-  text-decoration: none;
-  background-color: #6b6a6a;
-  color: #fff;
+    text-decoration: none;
+    background-color: #6b6a6a;
+    color: #fff;
 }
 
 a.list-group-item.brand {
@@ -268,7 +269,8 @@ a.list-group-item.brand:hover {
         display: block;
         padding: 5px 20px;
         clear: both;
-        font-weight: normal;
+        font-weight: bold;
+        font-size: smaller;
         line-height: 1.42857143;
         color: #fff;
         white-space: nowrap;
