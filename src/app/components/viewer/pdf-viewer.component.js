@@ -10,20 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 //entities
-var PhotoViewerComponent = (function () {
-    function PhotoViewerComponent() {
+var PDFComponent = (function () {
+    function PDFComponent() {
+        this.page = 1;
     }
-    return PhotoViewerComponent;
+    return PDFComponent;
 }());
 __decorate([
     core_1.Input(),
     __metadata("design:type", String)
-], PhotoViewerComponent.prototype, "srcString", void 0);
-PhotoViewerComponent = __decorate([
+], PDFComponent.prototype, "srcString", void 0);
+PDFComponent = __decorate([
     core_1.Component({
         //moduleId: module.id,
-        selector: 'view-img',
-        template: "<img class=\"content-img\" [src]=\"srcString\" />",
+        selector: 'view-pdf',
+        template: "\n\n        <pdf-viewer [src]=\"srcString\" \n                    [page]=\"page\" \n                    [show-all]=\"true\"\n                    [original-size]=\"false\" \n                    style=\"display: block;\"\n        ></pdf-viewer>\n    ",
     })
-], PhotoViewerComponent);
-exports.PhotoViewerComponent = PhotoViewerComponent;
+], PDFComponent);
+exports.PDFComponent = PDFComponent;
