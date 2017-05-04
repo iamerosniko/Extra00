@@ -122,3 +122,20 @@ body {
     -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .175);
             box-shadow: 0 4px 8px rgba(0, 0, 0, .175);
 }
+
+.btn {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn-circle {
+    height:40px;
+    width:40px;
+    border-radius:50%;
+}
+
+.btn-circle span {
+    padding-top:4px;
+}
