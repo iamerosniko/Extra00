@@ -8,14 +8,18 @@ export class TeamAppsComponent implements OnInit {
     slides: any[] = [];
     
     public constructor( private resourceService : ResourceService ) {}
-
-    ngOnInit(){
+    getSlides(){
+        this.slides=[];
         this.resourceService.getResourcePath('Team Apps')
             .then(res => {
                 this.slides.push({
                     image: res.ResourcePath
                 });
-            });
+            })
+            .catch(err=>{console.log(err)});
+    }
+    ngOnInit(){
+        this.getSlides();
     }
 
     // addSlide(filename:string): void {
