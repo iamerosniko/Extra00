@@ -7,8 +7,8 @@ import { DomSanitizer } from '@angular/platform-browser';
     template: `
 
         
-        <div width="100%" height="600px">
-            <embed [src]="sanitizer.bypassSecurityTrustResourceUrl(srcString)" width="100%" height="600px" type="application/pdf"   > 
+        <div width="100%" height="700px">
+            <embed [src]="sanitizer.bypassSecurityTrustResourceUrl(srcString)" width="100%" height="700px" type="application/pdf"   > 
         </div>
     `,
     
