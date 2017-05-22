@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
-<html class="full">
+<html class="fullSplash">
     <head>
         <title>WorkPlace</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
         <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="../Styles/Site.css">
@@ -12,16 +14,18 @@
         <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 
         <Style>
-            .full {
+            .fullSplash {
                 background:url("../SideNav/Images/background.png") no-repeat center center fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 background-size: cover;
                 -o-background-size: cover;
+                text-align: center;
             }
             
             body{
                 background-color: transparent;
+                text-align: center;
             }
 
             .SplashTheme{
@@ -32,42 +36,83 @@
             .User{
                 font-family: 'Lato', sans-serif;
                 font-size: 30px;
-                margin-top: 350px;
-                text-align: -webkit-center;
+                margin-top: 100px;
+                text-align: center;
                 position: relative;
             }
+
+            .brandLogo{
+                margin: 0 auto;
+                width: 650px;
+                min-width: 150px;
+                margin-top: 150px;
+                text-align: -webkit-center;
+                text-align: center;
+                position: relative;
+            }
+
+            .divider{
+                    width: 1px; 
+                    height: 110px; 
+                    background-color: white; 
+                    display: block; 
+                    margin: 0 10px; 
+                    padding: 0.1%; 
+                }
+
+            @media (max-width: 1050px) {
+                .brandLogo {
+                    margin: 0 auto;
+                    width: 250px;
+                    margin-top: 150px;
+                    text-align: -webkit-center;
+                    text-align: center;
+                    position: relative;
+                }
+                .divider{
+                    width: 300px; 
+                    height: 1px; 
+                    background-color: white; 
+                    display: block; 
+                    margin: 20px 0px;
+                }
+            }
+
+
+
             .Workplace{
                 font-family: 'Lato', sans-serif;
                 font-size: 30px;
-                text-align: -webkit-center;
+                text-align: center;
                 position: relative;
             }
 
             .authorized{
                 font-family: 'Lato', sans-serif;
                 font-size: 13px;
-                margin-top: 200px;
+                margin-top: 100px;
                 display: block;
-                text-align: -webkit-center;
+                text-align: center;
                 width: auto;
             }
 
             .buttondiv{
                 font-family: 'Lato', sans-serif;
                 font-size: 13px;
-                margin-top: 50px;
+                margin-top: 100px;
                 display: block;
-                text-align: -webkit-center;
+                text-align: center;
                 width: auto;
             }
 
-            .button{ 
+            .Button{ 
                 display: block;
                 height: 70px;
                 width: 70px;
                 border-radius: 100%;
                 border: 2px dotted #ffffff;  
                 text-align: -webkit-center;
+                margin: 0 auto;
             }
 
             .ButtonDesign{
@@ -82,12 +127,61 @@
                 text-anchor: middle;
                 padding-top: 25%;
             }
+        
+            .Button:hover{
+                display: block;
+                height: 70px;
+                width: 70px;
+                border-radius: 100%;
+                border: 2px solid #ffffff;  
+                text-align: -webkit-center;
+                margin: 0 auto;
+            }
+
+            .ButtonDesign:hover {
+                color: #00aeef;
+                font-size: 12px;
+                background-color: #ffffff;
+                font-family: 'Lato', sans-serif;
+                margin: 8%;
+                border: 1px solid #FFFFFF;
+                border-radius: 100%;
+                width: 85%;
+                height: 85%;
+                text-anchor: middle;
+                padding-top: 25%;
+            }
+
+            .manulifelogo{
+                width: 100%; margin-top: 5%
+            }
+
+            .johnhancocklogo{
+                width: 100%; margin-top: 2%
+            }
+
+            .logo{
+                margin: 0; padding: 0
+            }
+                
         </Style>
     </head>
     <body>
+
+                <div class="SplashTheme brandLogo">
+                    <div class="row">
+                        <div class="col-md-6" style="margin: 0; padding: 0">
+                            <img src="../SideNav/Images/Manulife.png" class="manulifelogo">
+                        </div>
+                        <div class="col-md-1 divider"></div>
+                        <div class="col-md-5" style="margin: 0; padding: 0">
+                            <img src="../SideNav/Images/JohnHancock.png" class="johnhancocklogo">
+                        </div>
+                    </div>
+                </div>
            
                 <div class="SplashTheme User">
-                        Hi sarnife
+                        Hi sarnife.
                 </div>
                 <div class="SplashTheme Workplace">
                         Welcome to Project Workplace
@@ -97,13 +191,12 @@
                 </div>
 
                 <div class="SplashTheme buttondiv">
-                    <diV class="button">
+                    <diV class="Button">
                         <a href="" >
-                            <div class="ButtonDesign text-center">ENTER</div>
+                            <div class="ButtonDesign">ENTER</div>
                         </a>
                     <div>
                 </div>
-   
                 
     </body>
 </html>
