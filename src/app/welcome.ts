@@ -3,12 +3,13 @@ import { Auth } from './entities/auth';
 @Component({
   moduleId: module.id,
   selector: 'welcome-user',
-  templateUrl: 'welcome.html'                                                                   
+  templateUrl: 'welcome.html',
+  styleUrls: ['welcome.css']                                                                   
 })
 export class WelcomeComponent  { 
   @Input() user:Auth;
-  @Output() cv:EventEmitter<string>=new EventEmitter();
+  @Output() cv=new EventEmitter();
   changeView(){
-    this.cv.emit('');
+    this.cv.emit();
   }
 }

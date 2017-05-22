@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="fullSplash">
   <head>
     <title>Angular QuickStart</title>
     <base href="/">
@@ -27,7 +27,16 @@
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>
-
+    <style>
+      .fullSplash {
+          background:url("Resources/Images/background.png") no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          -o-background-size: cover;
+          text-align: center;
+      }
+    </style>
   </head>
 
   <body>

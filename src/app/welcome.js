@@ -15,7 +15,7 @@ var WelcomeComponent = (function () {
         this.cv = new core_1.EventEmitter();
     }
     WelcomeComponent.prototype.changeView = function () {
-        this.cv.emit('');
+        this.cv.emit();
     };
     return WelcomeComponent;
 }());
@@ -25,13 +25,14 @@ __decorate([
 ], WelcomeComponent.prototype, "user", void 0);
 __decorate([
     core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
+    __metadata("design:type", Object)
 ], WelcomeComponent.prototype, "cv", void 0);
 WelcomeComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'welcome-user',
-        templateUrl: 'welcome.html'
+        templateUrl: 'welcome.html',
+        styleUrls: ['welcome.css']
     })
 ], WelcomeComponent);
 exports.WelcomeComponent = WelcomeComponent;

@@ -2,7 +2,6 @@ import { NgModule }      from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
-import { NonAuthComponent } from './non-auth';
 import { AuthUserComponent } from './auth-user';
 import { WelcomeComponent } from './welcome';
 //ComponentModules
@@ -27,7 +26,7 @@ import { AuthService } from './services/auth.service';
                   ExamModule,
                   AppRouting 
                 ],
-  declarations: [ AppComponent,NonAuthComponent,AuthUserComponent,WelcomeComponent ],
+  declarations: [ AppComponent,AuthUserComponent,WelcomeComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService]
 })
