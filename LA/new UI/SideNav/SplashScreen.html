@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="fullSplash">
+<html >
     <head>
         <title>WorkPlace</title>
         <meta charset="utf-8">
@@ -15,12 +15,21 @@
 
         <Style>
             .fullSplash {
-                background:url("../SideNav/Images/background.png") no-repeat center center fixed;
+                background:url("../SideNav/Images/background.jpg") no-repeat center center fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 background-size: cover;
                 -o-background-size: cover;
                 text-align: center;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+
+            .scrollAuto{
+                width: 100%; 
+                height: 100%; 
+                overflow: auto;
             }
             
             body{
@@ -167,7 +176,8 @@
         </Style>
     </head>
     <body>
-
+        <div class="fullSplash">
+            <div class="scrollAuto">
                 <div class="SplashTheme brandLogo">
                     <div class="row">
                         <div class="col-md-6" style="margin: 0; padding: 0">
@@ -180,24 +190,25 @@
                     </div>
                 </div>
            
-                <div class="SplashTheme User">
-                        Hi sarnife.
-                </div>
-                <div class="SplashTheme Workplace">
-                        Welcome to Project Workplace
-                </div>
-                <div class="SplashTheme authorized">
-                   You are authorized to use this application
-                </div>
+                    <div class="SplashTheme User">
+                            Hi sarnife.
+                    </div>
+                    <div class="SplashTheme Workplace">
+                            Welcome to Project Workplace
+                    </div>
+                    <div class="SplashTheme authorized">
+                    You are authorized to use this application
+                    </div>
 
-                <div class="SplashTheme buttondiv">
-                    <diV class="Button">
-                        <a href="" >
-                            <div class="ButtonDesign">ENTER</div>
-                        </a>
-                    <div>
+                    <div class="SplashTheme buttondiv">
+                        <diV class="Button">
+                            <a href="" >
+                                <div class="ButtonDesign">ENTER</div>
+                            </a>
+                        <div>
                 </div>
-                
+            </div>
+        </div>      
     </body>
 </html>
 
