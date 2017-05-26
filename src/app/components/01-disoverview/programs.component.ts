@@ -4,7 +4,7 @@ import { ActivatedRoute,  Params, Router } from '@angular/router';
     moduleId: module.id,
     templateUrl:`strategies.component.html`
 })
-export class StrategiesComponent implements OnInit { 
+export class ProgramsComponent implements OnInit { 
     slides: any[] = [];
     routeName: '';
     public constructor(private route: ActivatedRoute,

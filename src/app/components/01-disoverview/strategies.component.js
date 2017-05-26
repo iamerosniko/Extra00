@@ -12,7 +12,6 @@ var core_1 = require("@angular/core");
 var StrategiesComponent = (function () {
     function StrategiesComponent() {
         this.slides = [];
-        //path:string = 'resources/workplace/01DIS OVERVIEW/03-Strategies.png';
         this.breadcrumbs = ['DIS Overview', 'Strategies'];
         this.addSlide('03a - customer experience.png');
         this.addSlide('03b - process improvement.png');
