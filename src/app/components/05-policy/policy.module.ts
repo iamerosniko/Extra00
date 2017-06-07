@@ -7,6 +7,8 @@ import { BereavementComponent } from './bereavement.component';
 import { WorkRuleComponent } from './workrule.component';
 import { ViewerModule } from '../viewer/viewer.module';
 import { PolicyRouting } from './policy.routing';
+import { InformationComponent } from './information.component';
+import { PrivacyComponent } from './privacy.component';
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
 @NgModule({
     imports: [
@@ -18,7 +20,9 @@ import { PolicyRouting } from './policy.routing';
     declarations: [
         VLComponent,
         WorkRuleComponent,
-        BereavementComponent
+        BereavementComponent,
+        InformationComponent,
+        PrivacyComponent
     ],
     providers: [
     ]
