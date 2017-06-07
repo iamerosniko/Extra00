@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
     moduleId: module.id,
     templateUrl:`sc.component.html`
 })
-export class SCComponent  { 
+export class SCComponent  {
     slides: any[] = [];
 
     public constructor() {
-        this.addSlide('04-Functional Tower.jpg');
+        //this.addSlide('04-Functional Tower.jpg');
+        this.addSlide('functional towers.jpg');
     }
 
     addSlide(filename:string): void {
