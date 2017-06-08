@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 //component
 import { OptComponent } from './opt.component';
 import { KhronosComponent } from './khronos.component';
+import { WorkdayComponent } from './workday.component';
 
 const routes: Routes = [
     //paths
     { path : 'opt', component: OptComponent },
     { path : 'khronos', component: KhronosComponent },
+    { path : 'workday', component: WorkdayComponent },
 ];
 
  @NgModule ({

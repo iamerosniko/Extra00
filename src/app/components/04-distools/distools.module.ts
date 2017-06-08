@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { OptComponent } from './opt.component';
 import { KhronosComponent } from './khronos.component';
+import { WorkdayComponent } from './workday.component';
 
 import { ViewerModule } from '../viewer/viewer.module';
 import { DISToolsRouting } from './distools.routing';
@@ -18,6 +19,7 @@ import { DISToolsRouting } from './distools.routing';
     declarations: [
         OptComponent,
         KhronosComponent,
+        WorkdayComponent
     ],
     providers: [
     ]
