@@ -5,8 +5,9 @@ import { Examinee } from '../entities/examinee';
 @Injectable()
 export class ExamineeService {
     private headers = new Headers({'Content-Type': 'application/json'});
-    private apiUrl = 'api/Examinees';  
-    
+    private apiUrl = 'api/Examinees';
+    private apiScoreUrl = 'api/ViewScore';
+
     constructor(private http: Http){}
     //pass the question id
     getExaminees():Promise<Examinee[]>{
@@ -17,13 +18,20 @@ export class ExamineeService {
                 .catch(this.handleError);
     }
 
+    getScore(){
+      return this.http
+      .get(this.apiScoreUrl, {headers: this.headers})
+      .toPromise()
+      .then(response => response.json());
+    }
+
     getExaminee(personId: string): Promise<Examinee[]> {
         const url = `${this.apiUrl}/${personId}`;
         return this.http
                 .get(url)
                 .toPromise()
-                .then(response => response.json())  
-                .catch(this.handleError);      
+                .then(response => response.json())
+                .catch(this.handleError);
     }
 
     postExaminee(newExaminee: Examinee): Promise<Examinee> {
@@ -42,7 +50,7 @@ export class ExamineeService {
             .then(() => examinee)
             .catch(this.handleError);
     }
-    
+
     DeleteExaminee(examineeId: string): Promise<void> {
         const url = `${this.apiUrl}/${examineeId}`;
         return this.http

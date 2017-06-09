@@ -11,8 +11,9 @@ import { UUID } from 'angular2-uuid';
     moduleId: module.id,
     templateUrl:'exam.component.html'
 })
-export class ExamComponent implements OnInit { 
+export class ExamComponent implements OnInit {
     questions:Question[]=[];
+    scores:any=null;
     canSubmit:boolean=false;
     score:number = 0;
     viewScore:boolean=false;
@@ -25,16 +26,18 @@ export class ExamComponent implements OnInit {
         public examineeService: ExamineeService,
         private route: ActivatedRoute,
         private router: Router
-    ){ 
+    ){
     }
 
     ngOnInit(){
+        this.examineeService.getScore().then(x=>this.scores=x);
         this.randomQuestionService.getQuestions()
             .then(rq=>{
                 this.questions=rq;
                 this.getExamineeInfo();
                 this.getExamDetail();
             });
+
     }
     //check answers if it is ready to submit
     checkAnswers():void{
@@ -58,9 +61,9 @@ export class ExamComponent implements OnInit {
 
     getExamineeInfo(){
         this.route.params.subscribe(params => {
-            this.username = params['id'];}); 
+            this.username = params['id'];});
         this.personService.getPerson(this.username)
-            .then( p => this.examinee.PersonID = p.PersonID )   
+            .then( p => this.examinee.PersonID = p.PersonID )
     }
     getExamDetail(){
         this.examinee.Items= this.questions.length;
