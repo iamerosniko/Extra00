@@ -3,9 +3,10 @@ import { Component } from '@angular/core';
     moduleId: module.id,
     templateUrl:`org.component.html`
 })
-export class OrgComponent  { 
+export class OrgComponent  {
     path:string = 'resources/workplace/01DIS OVERVIEW/02-Organizational Chart.jpg';
-    breadcrumbs =['DIS Overview' ,'Organizational Structure'];slides: any[] = [];
+    breadcrumbs =['DIS Overview' ,'Organizational Structure'];
+    slides: any[] = [];
 
     public constructor() {
         this.addSlide('02-Organizational Chart.jpg');
