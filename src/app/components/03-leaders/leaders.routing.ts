@@ -3,13 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 //component
 import { TLComponent } from './tl.component';
 import { AVPComponent } from './avp.component';
-
 import { ManagerComponent } from './manager.component';
+
 const routes: Routes = [
     //paths
     { path : 'Team-Leader', component: TLComponent },
-    { path : 'Manager', component: AVPComponent },
-    { path : 'AVP', component: AVPComponent },
+    { path : 'Manager', component: ManagerComponent },
+    { path : 'FH', component: AVPComponent },
 ];
 
  @NgModule ({

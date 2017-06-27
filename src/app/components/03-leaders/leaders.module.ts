@@ -17,6 +17,7 @@ import { ViewerModule } from '../viewer/viewer.module';
     declarations: [
         TLComponent,
         AVPComponent,
+        ManagerComponent
     ],
     providers: [
     ]
