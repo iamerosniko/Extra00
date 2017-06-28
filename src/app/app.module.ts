@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { AppComponent }  from './app.component';
 import { AuthUserComponent } from './auth-user';
 import { WelcomeComponent } from './welcome';
@@ -18,6 +19,7 @@ import { AuthService } from './services/auth.service';
 import { TeamService } from './services/team.service';
 @NgModule({
   imports:      [ BrowserModule ,
+                  FormsModule,
                   CommonModule,
                   LeadersModule,
                   DISOverviewModule,

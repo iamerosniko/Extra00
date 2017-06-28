@@ -1,4 +1,5 @@
 import { Component,Input,Output, OnInit, EventEmitter } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
 import { Auth } from './entities/auth';
 import { Team } from './entities/team';
 import { TempUser } from './entities/tempuser';
