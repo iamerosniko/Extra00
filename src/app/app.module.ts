@@ -15,8 +15,9 @@ import { ExamModule } from './components/06-exam/exam.module';
 import { AppRouting } from './app.routing';
 //services
 import { AuthService } from './services/auth.service';
+import { TeamService } from './services/team.service';
 @NgModule({
-  imports:      [ BrowserModule , 
+  imports:      [ BrowserModule ,
                   CommonModule,
                   LeadersModule,
                   DISOverviewModule,
@@ -24,10 +25,10 @@ import { AuthService } from './services/auth.service';
                   DISToolsModule,
                   PolicyModule,
                   ExamModule,
-                  AppRouting 
+                  AppRouting
                 ],
   declarations: [ AppComponent,AuthUserComponent,WelcomeComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [AuthService]
+  providers: [AuthService,TeamService]
 })
 export class AppModule { }
