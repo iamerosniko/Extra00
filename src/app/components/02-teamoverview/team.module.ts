@@ -5,8 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { TeamOrgComponent } from './team-org.component';
 import { TeamAppsComponent } from './team-apps.component';
 import { TeamServicesComponent } from './team-services.component';
-import { TeamJobDescComponent } from './team-jobdesc.component';
-
 import { TeamRouting } from './team.routing';
 import { ViewerModule } from '../viewer/viewer.module';
 /* ngx-bootstrap */
@@ -26,7 +24,6 @@ import { ResourceService } from '../../services/resource.service';
         TeamOrgComponent,
         TeamAppsComponent,
         TeamServicesComponent,
-        TeamJobDescComponent
     ],
     providers: [
         ResourceService,
