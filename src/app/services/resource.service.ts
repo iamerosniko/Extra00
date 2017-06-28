@@ -5,8 +5,8 @@ import { Resource } from '../entities/resource';
 @Injectable()
 export class ResourceService {
     private headers = new Headers({'Content-Type': 'application/json'});
-    private apiUrl = 'api/Resources';  
-    
+    private apiUrl = 'api/Resources';
+
     constructor(private http: Http){}
     //pass the question id
     getResourcePath(resourceCategory: string): Promise<Resource> {
@@ -14,8 +14,18 @@ export class ResourceService {
         return this.http
                 .get(url)
                 .toPromise()
-                .then(response => response.json())  
-                .catch(this.handleError);      
+                .then(response => response.json())
+                .catch(this.handleError);
+    }
+
+    //this get values related to PW_TEMPORARYUSERS (NOT YET DONE)
+    getResourcePath2(resourceCategory: string): Promise<Resource> {
+        const url = `${this.apiUrl}/GetResourcePath/?resourceCategory=${resourceCategory}`;
+        return this.http
+                .get(url)
+                .toPromise()
+                .then(response => response.json())
+                .catch(this.handleError);
     }
 
     private handleError(error: any): Promise<any> {
