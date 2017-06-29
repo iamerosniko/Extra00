@@ -5,7 +5,7 @@ import { DomSanitizer } from '@angular/platform-browser';
     moduleId: module.id,
     templateUrl:`team-org.component.html`
 })
-export class TeamOrgComponent implements OnInit { 
+export class TeamOrgComponent implements OnInit {
     slides: any[] = [];
     content:any;
     path:string =''
@@ -15,7 +15,8 @@ export class TeamOrgComponent implements OnInit {
     }
 
     ngOnInit(){
-        this.resourceService.getResourcePath('Team Org')
+      //this.resourceService.getResourcePath('Team Org')
+        this.resourceService.getResourcePath2('Team Org')
             .then(res => {
                 this.path=res.ResourcePath
             });

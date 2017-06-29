@@ -4,13 +4,14 @@ import { ResourceService } from '../../services/resource.service';
     moduleId: module.id,
     templateUrl:`team-apps.component.html`
 })
-export class TeamAppsComponent implements OnInit { 
+export class TeamAppsComponent implements OnInit {
     slides: any[] = [];
-    
+
     public constructor( private resourceService : ResourceService ) {}
     getSlides(){
         this.slides=[];
-        this.resourceService.getResourcePath('Team Apps')
+        //this.resourceService.getResourcePath('Team Apps')
+        this.resourceService.getResourcePath2('Team Apps')
             .then(res => {
                 this.slides.push({
                     image: res.ResourcePath
