@@ -5,7 +5,7 @@ import { Leader } from './entities/leader';
 import { TempUser } from './entities/tempuser';
 import { TeamService } from './services/team.service';
 import { LeaderService } from './services/leader.service';
-import { TempUserService } from './services/tempuser.service'
+import { TempUserService } from './services/tempuser.service';
 @Component({
   moduleId: module.id,
   selector: 'welcome-user',
@@ -47,8 +47,8 @@ export class WelcomeComponent implements OnInit {
   submitUser(){
     if(this.tempuser.FirstName=="" ||
     this.tempuser.LastName=="" ||
-    this.tempuser.Team==""||
-    this.tempuser.Leader==0){
+    this.tempuser.TeamID==""||
+    this.tempuser.LeaderID==0){
       alert("Some fields are not supplied.")
     }
     else{
