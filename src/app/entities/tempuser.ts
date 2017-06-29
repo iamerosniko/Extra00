@@ -8,5 +8,6 @@ export class TempUser {
         public UserName : string,
         public QuizScore : number,
         public QuizItem : number,
+        public IsActive : boolean
     ){}
 }

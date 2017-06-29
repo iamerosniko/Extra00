@@ -17,6 +17,8 @@ import { AppRouting } from './app.routing';
 //services
 import { AuthService } from './services/auth.service';
 import { TeamService } from './services/team.service';
+import { LeaderService } from './services/leader.service';
+import { TempUserService } from './services/tempuser.service';
 @NgModule({
   imports:      [ BrowserModule ,
                   FormsModule,
@@ -31,6 +33,6 @@ import { TeamService } from './services/team.service';
                 ],
   declarations: [ AppComponent,AuthUserComponent,WelcomeComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [AuthService,TeamService]
+  providers: [AuthService,TeamService,LeaderService,TempUserService]
 })
 export class AppModule { }

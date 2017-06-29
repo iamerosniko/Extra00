@@ -20,7 +20,7 @@ export class ResourceService {
 
     //this get values related to PW_TEMPORARYUSERS (NOT YET DONE)
     getResourcePath2(resourceCategory: string): Promise<Resource> {
-        const url = `${this.apiUrl}/GetResourcePath/?resourceCategory=${resourceCategory}`;
+        const url = `${this.apiUrl}/GetResourcePath2/?resourceCategory=${resourceCategory}`;
         return this.http
                 .get(url)
                 .toPromise()
