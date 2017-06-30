@@ -47,6 +47,7 @@ export class ExamComponent implements OnInit {
         this.resourceService.getCurrentUser().then(
           user=>this.tempUser=user
         );
+
     }
     //check answers if it is ready to submit
     checkAnswers():void{
@@ -66,7 +67,7 @@ export class ExamComponent implements OnInit {
         this.examinee.Score=this.score;
 
         this.tempUser.QuizScore=this.score;
-        //this.tempUser.QuizItem=this.scores.Items;
+        this.tempUser.QuizItem=this.questions.length;
 
         this.tempUserService.putTempUser(this.tempUser).then(
           ()=>{
