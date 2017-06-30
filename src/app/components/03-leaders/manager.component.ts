@@ -9,8 +9,11 @@ export class ManagerComponent implements OnInit {
     breadcrumbs =['Leaders\' Video' ,'Manager'];
     public constructor( private resourceService : ResourceService ) {}
     ngOnInit(){
-      this.resourceService.getResourcePath('Manager')
-          .then(req=>this.path=req.ResourcePath);
+      // this.resourceService.getResourcePath('Manager')
+      //     .then(req=>this.path=req.ResourcePath);
+      this.resourceService.getVideo(false).then(
+        req=> this.path=req.ResourcePath
+      );
     }
     //path:string = 'resources/mock/videoplayback.mp4';
 

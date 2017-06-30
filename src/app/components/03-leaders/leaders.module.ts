@@ -6,6 +6,7 @@ import { ManagerComponent } from './manager.component';
 import { AVPComponent } from './avp.component';
 import { LeadersRouting } from './leaders.routing';
 import { ViewerModule } from '../viewer/viewer.module';
+import { ResourceService } from '../../services/resource.service';
 //import { PhotoViewerComponent } from '../photo-viewer/photo-viewer.component';
 @NgModule({
     imports: [
@@ -20,6 +21,7 @@ import { ViewerModule } from '../viewer/viewer.module';
         ManagerComponent
     ],
     providers: [
+      ResourceService
     ]
 })
 

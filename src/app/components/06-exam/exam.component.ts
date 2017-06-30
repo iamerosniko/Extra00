@@ -7,6 +7,10 @@ import { Question } from '../../entities/question';
 import { Examinee } from '../../entities/examinee';
 import { UUID } from 'angular2-uuid';
 
+import { TempUserService } from '../../services/tempuser.service';
+import { ResourceService } from '../../services/resource.service';
+import { TempUser } from '../../entities/tempuser';
+
 @Component({
     moduleId: module.id,
     templateUrl:'exam.component.html'
@@ -20,24 +24,29 @@ export class ExamComponent implements OnInit {
     examinee:Examinee=new Examinee( UUID.UUID(), UUID.UUID(),0,'696bc6f9-d758-452e-b0d1-d40ebbcfd342',new Date(),0,0);
     username:string='';
     breadcrumbs =['Take the Exam'];
+    tempUser:TempUser;
     constructor(
         public randomQuestionService: RandomQuestionService,
         public personService: PersonService,
         public examineeService: ExamineeService,
         private route: ActivatedRoute,
-        private router: Router
+        private router: Router,
+        private tempUserService:TempUserService,
+        private resourceService:ResourceService
     ){
     }
 
     ngOnInit(){
-        this.examineeService.getScore().then(x=>this.scores=x);
+        //this.examineeService.getScore().then(x=>this.scores=x);
         this.randomQuestionService.getQuestions()
             .then(rq=>{
                 this.questions=rq;
                 this.getExamineeInfo();
                 this.getExamDetail();
             });
-
+        this.resourceService.getCurrentUser().then(
+          user=>this.tempUser=user
+        );
     }
     //check answers if it is ready to submit
     checkAnswers():void{
@@ -55,8 +64,18 @@ export class ExamComponent implements OnInit {
         this.viewScore=true;
         this.examinee.DateCompleted=new Date();
         this.examinee.Score=this.score;
+
+        this.tempUser.QuizScore=this.score;
+        //this.tempUser.QuizItem=this.scores.Items;
+
+        this.tempUserService.putTempUser(this.tempUser).then(
+          ()=>{
+            console.log("..");
+
+          }
+        );
         //service for posting score to PW_Examiners
-        this.examineeService.postExaminee(this.examinee);
+        //this.examineeService.postExaminee(this.examinee);
     }
 
     getExamineeInfo(){

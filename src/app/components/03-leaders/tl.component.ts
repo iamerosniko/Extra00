@@ -9,8 +9,11 @@ export class TLComponent implements OnInit {
     breadcrumbs =['Leaders\' Video' ,'Team Leader'];
     public constructor( private resourceService : ResourceService ) {}
     ngOnInit(){
-      this.resourceService.getResourcePath('Leaders')
-          .then(req=>this.path=req.ResourcePath);
+      // this.resourceService.getResourcePath('Leaders')
+      //     .then(req=>this.path=req.ResourcePath);
+      this.resourceService.getVideo(true).then(
+        req=> this.path=req.ResourcePath
+      );
     }
     //path:string = 'resources/mock/videoplayback.mp4';
 
