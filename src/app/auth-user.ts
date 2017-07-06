@@ -6,8 +6,9 @@ import { Auth } from './entities/auth';
   selector: 'auth-user',
   templateUrl: 'auth-user.html'
 })
-export class AuthUserComponent  { 
+export class AuthUserComponent  {
   @Input() user:Auth;
+  activeLink:number=0;
   constructor(
         private router: Router,
   ){ }
