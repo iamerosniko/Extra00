@@ -13,16 +13,16 @@ export class ProgramsComponent implements OnInit {
     }
 
     ngOnInit(){
-        console.log('ngoninit');
+        //console.log('ngoninit');
         this.getRouteName();
     }
     getImage(){
-        console.log('getImage');
+        //console.log('getImage');
         this.slides=[];
         this.addSlide(this.routeName+'.jpg');
     }
     getRouteName(){
-        console.log('getRouteName');
+        //console.log('getRouteName');
         this.route.params.subscribe(params => {
             this.routeName = params['id'];
             this.breadcrumbs=[];

@@ -54,7 +54,7 @@ export class WelcomeComponent implements OnInit {
     else{
       this.tempuser.UserName=this.user.userName;
       this.tempuserService.postTempUser(this.tempuser).then(()=>{
-        console.log("okay");
+        //console.log("okay");
       })
       this.changeView();
     }
