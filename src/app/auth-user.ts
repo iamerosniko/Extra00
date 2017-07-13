@@ -11,7 +11,9 @@ export class AuthUserComponent  {
   activeLink:number=0;
   constructor(
         private router: Router,
-  ){ }
+  ){ 
+    this.routeWOUserName('mission-vision');
+  }
 
   routeWithUserName(path:string){
       this.router.navigate(['/'+path, this.user.userName]);

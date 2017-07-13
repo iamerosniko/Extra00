@@ -13,11 +13,15 @@ var StrategiesComponent = (function () {
     function StrategiesComponent() {
         this.slides = [];
         this.breadcrumbs = ['DIS Overview', 'Strategies'];
+        this.addSlide('03 - Strategy-1.jpg');
+        this.addSlide('03 - Strategy-2.jpg');
+        this.addSlide('03 - Strategy-3.jpg');
+        this.addSlide('03 - Strategy-4.jpg');
         // this.addSlide('03a - customer experience.png');
         // this.addSlide('03b - process improvement.png');
         // this.addSlide('03c - cost efficiencies.png');
         // this.addSlide('03d - performance.png');
-        this.addSlide('strategies.jpg');
+        // this.addSlide('strategies.jpg');
     }
     StrategiesComponent.prototype.addSlide = function (filename) {
         this.slides.push({

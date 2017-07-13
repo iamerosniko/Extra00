@@ -7,11 +7,15 @@ export class StrategiesComponent  {
     slides: any[] = [];
 
     public constructor() {
+        this.addSlide('03 - Strategy-1.jpg');
+        this.addSlide('03 - Strategy-2.jpg');
+        this.addSlide('03 - Strategy-3.jpg');
+        this.addSlide('03 - Strategy-4.jpg');
         // this.addSlide('03a - customer experience.png');
         // this.addSlide('03b - process improvement.png');
         // this.addSlide('03c - cost efficiencies.png');
         // this.addSlide('03d - performance.png');
-        this.addSlide('strategies.jpg');
+        // this.addSlide('strategies.jpg');
     }
 
     addSlide(filename:string): void {

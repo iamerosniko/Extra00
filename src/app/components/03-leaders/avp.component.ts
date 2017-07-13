@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 export class AVPComponent  {
     //path:string = 'resources/mock/videoplayback.mp4';
     path:string = 'resources/workplace/03LEADERS/Denmar.mp4';
-    breadcrumbs =['Leaders\' Video' ,'Team Leader'];
+    breadcrumbs =['Leaders\' Video' ,'Function Head'];
 }
