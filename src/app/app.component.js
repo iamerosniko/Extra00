@@ -60,10 +60,8 @@ var AppComponent = (function () {
         });
     }
     AppComponent.prototype.changeView = function () {
-        if (this.auth.isAuthenticated)
+        if (this.auth.isAuthenticated) {
             this.viewPage = 1;
-        else {
-            this.viewPage = 2;
             this.routeWOUserName('mission-vision');
         }
     };

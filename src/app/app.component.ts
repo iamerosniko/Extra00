@@ -16,16 +16,14 @@ export class AppComponent {
     ){
         this.authService.getAuthorization()
             .then(auth => {
-                this.auth =auth;
+                this.auth=auth;
             });
     }
-    changeView(){
-        if(this.auth.isAuthenticated) this.viewPage=1;
-        else {
-            this.viewPage=2;
-            this.routeWOUserName('mission-vision');
-        }
-        
+    async changeView(){
+        if(this.auth.isAuthenticated){
+            this.viewPage=await 1;
+            await this.routeWOUserName('mission-vision');
+        } 
     }
     async routeWOUserName(path:string){
       this.router.navigate(['/'+path]);

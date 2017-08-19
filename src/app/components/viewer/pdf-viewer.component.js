@@ -14,7 +14,6 @@ var platform_browser_1 = require("@angular/platform-browser");
 var PDFComponent = (function () {
     function PDFComponent(sanitizer) {
         this.sanitizer = sanitizer;
-        this.page = 1;
     }
     return PDFComponent;
 }());
@@ -26,7 +25,7 @@ PDFComponent = __decorate([
     core_1.Component({
         //moduleId: module.id,
         selector: 'view-pdf',
-        template: "\n\n        \n        <div width=\"100%\" height=\"700px\"  style=\"box-shadow: 0px 2px 2px 2px #888888;\">\n            <embed [src]=\"sanitizer.bypassSecurityTrustResourceUrl(srcString)\" width=\"100%\" height=\"700px\" type=\"application/pdf\"   > \n        </div>\n    ",
+        template: "\n        <div width=\"100%\" height=\"700px\"  style=\"box-shadow: 0px 2px 2px 2px #888888;\">\n            <embed [src]=\"sanitizer.bypassSecurityTrustResourceUrl(srcString)\" width=\"100%\" height=\"700px\" type=\"application/pdf\"   > \n        </div>\n    ",
     }),
     __metadata("design:paramtypes", [platform_browser_1.DomSanitizer])
 ], PDFComponent);

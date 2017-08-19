@@ -9,7 +9,6 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 //import { MyCommonModule } from '../common-components/mycommon.module';
-var ng2_pdf_viewer_1 = require("ng2-pdf-viewer");
 var pdf_viewer_component_1 = require("./pdf-viewer.component");
 var photo_viewer_component_1 = require("./photo-viewer.component");
 var video_viewer_component_1 = require("./video-viewer.component");
@@ -27,7 +26,6 @@ ViewerModule = __decorate([
             ng2_lazyload_image_1.LazyLoadImageModule
         ],
         declarations: [
-            ng2_pdf_viewer_1.PdfViewerComponent,
             pdf_viewer_component_1.PDFComponent,
             photo_viewer_component_1.PhotoViewerComponent,
             video_viewer_component_1.VideoViewerComponent,
@@ -35,7 +33,6 @@ ViewerModule = __decorate([
         providers: [],
         exports: [
             pdf_viewer_component_1.PDFComponent,
-            ng2_pdf_viewer_1.PdfViewerComponent,
             photo_viewer_component_1.PhotoViewerComponent,
             video_viewer_component_1.VideoViewerComponent,
         ]
