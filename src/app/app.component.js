@@ -60,10 +60,24 @@ var AppComponent = (function () {
         });
     }
     AppComponent.prototype.changeView = function () {
-        if (this.auth.isAuthenticated) {
-            this.viewPage = 1;
-            this.routeWOUserName('mission-vision');
-        }
+        return __awaiter(this, void 0, void 0, function () {
+            var _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        if (!this.auth.isAuthenticated) return [3 /*break*/, 3];
+                        _a = this;
+                        return [4 /*yield*/, 1];
+                    case 1:
+                        _a.viewPage = _b.sent();
+                        return [4 /*yield*/, this.routeWOUserName('mission-vision')];
+                    case 2:
+                        _b.sent();
+                        _b.label = 3;
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
     };
     AppComponent.prototype.routeWOUserName = function (path) {
         return __awaiter(this, void 0, void 0, function () {
